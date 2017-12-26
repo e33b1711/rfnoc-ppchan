@@ -1,0 +1,101 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/ram_2port.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_2port
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_fifo_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_fifo_flop2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo_flop2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_fifo_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_fifo_short.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo_short
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/setting_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module setting_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/chdr_framer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chdr_framer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/cvita_hdr_parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cvita_hdr_parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_fifo_cascade.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo_cascade
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/synchronizer_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer_impl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/vita/flow_control_responder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flow_control_responder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/vita/packet_error_responder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module packet_error_responder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_packet_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_packet_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/bin2gray.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2gray
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/gray2bin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gray2bin
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/timing/time_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/packet_proc/source_flow_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module source_flow_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/chdr_fifo_large.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chdr_fifo_large
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/noc_responder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noc_responder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/cvita_hdr_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cvita_hdr_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_demux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_demux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_demux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_demux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/fifo/axi_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/sim/fifo/axi_fifo_2clk_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fifo_2clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/cmd_pkt_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmd_pkt_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/chdr_deframer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chdr_deframer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/noc_input_port.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noc_input_port
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/noc_output_port.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noc_output_port
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/axi_forwarding_cam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_forwarding_cam
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/axi_slave_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_slave_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/noc_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noc_shell
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/axi_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/axi_crossbar_intf.sv" into library xil_defaultlib
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:31]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:126]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_cvita_lib.svh:115]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_cvita_lib.svh:314]
+INFO: [VRFC 10-311] analyzing module axi_crossbar_intf
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/control/axi_crossbar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/rfnoc/src/uhd-fpga/usrp3/lib/rfnoc/noc_block_export_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noc_block_export_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/ootmods/rfnoc-ppchan/rfnoc/fpga-src/noc_block_fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module noc_block_fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/noc_block_fir_tb.sv" into library xil_defaultlib
+WARNING: [VRFC 10-1195] overwriting previous definition of module axis_t [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:7]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:31]
+WARNING: [VRFC 10-1195] overwriting previous definition of module axis_master [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:27]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:126]
+WARNING: [VRFC 10-1195] overwriting previous definition of module axis_slave [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_axis_lib.svh:122]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_cvita_lib.svh:115]
+WARNING: [VRFC 10-1195] overwriting previous definition of module cvita_master [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_cvita_lib.svh:111]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_cvita_lib.svh:314]
+WARNING: [VRFC 10-1195] overwriting previous definition of module cvita_slave [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/axi/sim_cvita_lib.svh:310]
+WARNING: [VRFC 10-1195] overwriting previous definition of module settings_bus_t [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/control/sim_set_rb_lib.svh:7]
+WARNING: [VRFC 10-1195] overwriting previous definition of module settings_bus_master [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/control/sim_set_rb_lib.svh:29]
+WARNING: [VRFC 10-1195] overwriting previous definition of module settings_bus_slave [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/control/sim_set_rb_lib.svh:101]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/rfnoc/sim_rfnoc_lib.svh:128]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/rfnoc/sim_rfnoc_lib.svh:136]
+INFO: [VRFC 10-443] port direction not specified for function/task, assuming input [../../../../../../../../../rfnoc/src/uhd-fpga/usrp3/sim/rfnoc/sim_rfnoc_lib.svh:148]
+INFO: [VRFC 10-311] analyzing module noc_block_fir_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/xsim_proj/xsim_proj.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,35 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+========================================================
+TESTBENCH STARTED: noc_block_fir
+========================================================
+[TEST CASE   1] (t=000000000) BEGIN: Wait for Reset...
+[TEST CASE   1] (t=000001002) DONE... Passed
+[TEST CASE   2] (t=000001002) BEGIN: Check NoC ID...
+Read fir NOC ID: 91f2b8873a90bf24
+[TEST CASE   2] (t=000001238) DONE... Passed
+[TEST CASE   3] (t=000001238) BEGIN: Connect RFNoC blocks...
+Connecting noc_block_tb (SID: 1:0) to noc_block_fir (SID: 0:0)
+Connecting noc_block_fir (SID: 0:0) to noc_block_tb (SID: 1:0)
+[TEST CASE   3] (t=000005457) DONE... Passed
+[TEST CASE   4] (t=000005457) BEGIN: Write / readback user registers...
+[TEST CASE   4] (t=000006888) DONE... Passed
+[TEST CASE   5] (t=000006888) BEGIN: Test sequence...
+Iteration
+rec tlast
+Iteration
+rec tlast
+Iteration
+rec tlast
+Iteration
+rec tlast
+[TEST CASE   5] (t=000013378) DONE... Passed
+========================================================
+TESTBENCH FINISHED: noc_block_fir
+ - Time elapsed:   13400 ns             
+ - Tests Expected: 5
+ - Tests Run:      5
+ - Tests Passed:   5
+Result: PASSED   
+========================================================
+$finish called at time : 13400 ns : File "/home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/noc_block_fir_tb.sv" Line 29

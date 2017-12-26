@@ -1,0 +1,3 @@
+add_subdirectory(noc_block_chan128_tb)
+add_subdirectory(noc_block_chan256_tb)
+add_subdirectory(noc_block_fir_tb)

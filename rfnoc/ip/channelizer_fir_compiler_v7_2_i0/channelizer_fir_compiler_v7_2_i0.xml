@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>channelizer_fir_compiler_v7_2_i0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>event_s_data_tlast_missing_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_data_tlast_missing</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_DATA_TLAST_MISSING_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>event_s_data_tlast_unexpected_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_data_tlast_unexpected</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_DATA_TLAST_UNEXPECTED_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>event_s_data_chanid_incorrect_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_data_chanid_incorrect</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_DATA_CHANID_INCORRECT_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>event_s_config_tlast_missing_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_config_tlast_missing</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_CONFIG_TLAST_MISSING_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>event_s_config_tlast_unexpected_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_config_tlast_unexpected</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_CONFIG_TLAST_UNEXPECTED_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>event_s_reload_tlast_missing_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_reload_tlast_missing</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_RELOAD_TLAST_MISSING_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>event_s_reload_tlast_unexpected_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="interrupt_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>INTERRUPT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>event_s_reload_tlast_unexpected</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>SENSITIVITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EVENT_S_RELOAD_TLAST_UNEXPECTED_INTF.SENSITIVITY">EDGE_RISING</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXIS_RELOAD</spirit:name>
+      <spirit:displayName>S_AXIS_RELOAD</spirit:displayName>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_reload_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_reload_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_reload_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_reload_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.S_AXIS_RELOAD" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aclk_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK_INTF.ASSOCIATED_BUSIF">S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_DATA:S_AXIS_RELOAD</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK_INTF.ASSOCIATED_RESET">aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_CLKEN</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK_INTF.ASSOCIATED_CLKEN">aclken</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:displayName>aclk</spirit:displayName>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ACLK_INTF.FREQ_HZ">100000000</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aresetn_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ARESETN_INTF.POLARITY">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aclken_intf</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clockenable" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clockenable_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aclken</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXIS_DATA</spirit:name>
+      <spirit:displayName>S_AXIS_DATA</spirit:displayName>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_data_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_data_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_data_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_data_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_data_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M_AXIS_DATA</spirit:name>
+      <spirit:displayName>M_AXIS_DATA</spirit:displayName>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_data_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_data_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_data_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_data_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_data_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXIS_CONFIG</spirit:name>
+      <spirit:displayName>S_AXIS_CONFIG</spirit:displayName>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_config_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_config_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_config_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_config_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.S_AXIS_CONFIG" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0)">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.aresetn" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_ARESETN&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>aclken</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.aclken" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_ACLKEN&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_data_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_data_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_data_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_data_tlast" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_DATA_HAS_TLAST&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_data_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_DATA_TUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_data_tuser" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_DATA_HAS_TUSER&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_data_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_DATA_TDATA_WIDTH&apos;)) - 1)">47</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_config_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_config_tvalid" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_config_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_config_tready" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_config_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_config_tlast" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_CONFIG_PACKET_SIZE&apos;))!=0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_config_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_CONFIG_TDATA_WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_config_tdata" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_reload_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_reload_tvalid" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_reload_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_reload_tready" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_reload_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_reload_tlast" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_reload_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_RELOAD_TDATA_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s_axis_reload_tdata" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_data_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_data_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_axis_data_tready" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_DATA_HAS_TREADY&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_data_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_axis_data_tlast" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_DATA_HAS_TLAST&apos;)) != 0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_data_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_DATA_TUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_axis_data_tuser" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_DATA_HAS_TUSER&apos;)) != 0 or spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_ARESETN&apos;)) = 2)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_data_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_DATA_TDATA_WIDTH&apos;)) - 1)">79</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_data_tlast_missing</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_data_tlast_missing" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_DATA_HAS_TLAST&apos;)) = 1)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_data_tlast_unexpected</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_data_tlast_unexpected" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_DATA_HAS_TLAST&apos;)) = 1)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_data_chanid_incorrect</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_data_chanid_incorrect" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_DATA_HAS_TUSER&apos;)) = 1 or spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_DATA_HAS_TUSER&apos;)) = 3)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_config_tlast_missing</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_config_tlast_missing" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_CONFIG_PACKET_SIZE&apos;))!=0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_config_tlast_unexpected</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_config_tlast_unexpected" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL&apos;)) != 0 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_CONFIG_PACKET_SIZE&apos;))!=0)">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_reload_tlast_missing</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_reload_tlast_missing" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>event_s_reload_tlast_unexpected</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.event_s_reload_tlast_unexpected" xilinx:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_COEF_RELOAD&apos;)) != 0)">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="string">
+        <spirit:name>C_XDEVICEFAMILY</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XDEVICEFAMILY">kintex7</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_ELABORATION_DIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ELABORATION_DIR">./</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_COMPONENT_NAME</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COMPONENT_NAME">channelizer_fir_compiler_v7_2_i0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_COEF_FILE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_FILE">channelizer_fir_compiler_v7_2_i0.mif</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COEF_FILE_LINES</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_FILE_LINES">2560</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_FILTER_TYPE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FILTER_TYPE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_INTERP_RATE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INTERP_RATE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DECIM_RATE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DECIM_RATE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_ZERO_PACKING_FACTOR</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ZERO_PACKING_FACTOR">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_SYMMETRY</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYMMETRY">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_FILTS</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_FILTS">128</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_TAPS</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_TAPS">20</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_CHANNELS</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_CHANNELS">128</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_CHANNEL_PATTERN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CHANNEL_PATTERN">fixed</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_ROUND_MODE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ROUND_MODE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COEF_RELOAD</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_RELOAD">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_RELOAD_SLOTS</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_RELOAD_SLOTS">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COL_MODE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COL_MODE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COL_PIPE_LEN</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COL_PIPE_LEN">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_COL_CONFIG</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COL_CONFIG">20</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_OPTIMIZATION</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OPTIMIZATION">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DATA_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_PATH_WIDTHS">18,18</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DATA_IP_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_IP_PATH_WIDTHS">18,18</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DATA_PX_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_PX_PATH_WIDTHS">18,18</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_WIDTH">18</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_COEF_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_PATH_WIDTHS">16,16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COEF_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_WIDTH">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DATA_PATH_SRC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_PATH_SRC">0,1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_COEF_PATH_SRC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_PATH_SRC">0,0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PX_PATH_SRC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PX_PATH_SRC">0,1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DATA_PATH_SIGN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_PATH_SIGN">0,0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_COEF_PATH_SIGN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_PATH_SIGN">0,0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_ACCUM_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ACCUM_PATH_WIDTHS">34,34</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_OUTPUT_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUTPUT_WIDTH">34</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_OUTPUT_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUTPUT_PATH_WIDTHS">34,34</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_ACCUM_OP_PATH_WIDTHS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ACCUM_OP_PATH_WIDTHS">34,34</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_EXT_MULT_CNFG</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_EXT_MULT_CNFG">none</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DATA_PATH_PSAMP_SRC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_PATH_PSAMP_SRC">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_OP_PATH_PSAMP_SRC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OP_PATH_PSAMP_SRC">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_MADDS</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_MADDS">20</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_OPT_MADDS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OPT_MADDS">none</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_OVERSAMPLING_RATE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OVERSAMPLING_RATE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_INPUT_RATE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INPUT_RATE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_OUTPUT_RATE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUTPUT_RATE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DATA_MEMTYPE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_MEMTYPE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COEF_MEMTYPE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_MEMTYPE">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_IPBUFF_MEMTYPE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_IPBUFF_MEMTYPE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_OPBUFF_MEMTYPE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OPBUFF_MEMTYPE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DATAPATH_MEMTYPE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATAPATH_MEMTYPE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MEM_ARRANGEMENT</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MEM_ARRANGEMENT">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DATA_MEM_PACKING</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_MEM_PACKING">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_COEF_MEM_PACKING</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COEF_MEM_PACKING">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_FILTS_PACKED</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FILTS_PACKED">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_LATENCY</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_LATENCY">28</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_HAS_ARESETn</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_HAS_ARESETn">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_HAS_ACLKEN</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_HAS_ACLKEN">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DATA_HAS_TLAST</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_HAS_TLAST">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_DATA_HAS_FIFO</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_DATA_HAS_FIFO">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_DATA_HAS_TUSER</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_DATA_HAS_TUSER">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_DATA_TDATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_DATA_TDATA_WIDTH">48</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_DATA_TUSER_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_DATA_TUSER_WIDTH">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M_DATA_HAS_TREADY</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_DATA_HAS_TREADY">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M_DATA_HAS_TUSER</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_DATA_HAS_TUSER">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M_DATA_TDATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_DATA_TDATA_WIDTH">80</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M_DATA_TUSER_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_DATA_TUSER_WIDTH">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_HAS_CONFIG_CHANNEL</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_HAS_CONFIG_CHANNEL">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_CONFIG_SYNC_MODE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CONFIG_SYNC_MODE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_CONFIG_PACKET_SIZE</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CONFIG_PACKET_SIZE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_CONFIG_TDATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CONFIG_TDATA_WIDTH">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RELOAD_TDATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RELOAD_TDATA_WIDTH">1</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_0dc4ca8f</spirit:name>
+      <spirit:enumeration>Automatic</spirit:enumeration>
+      <spirit:enumeration>Custom</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_24b724fb</spirit:name>
+      <spirit:enumeration>Basic</spirit:enumeration>
+      <spirit:enumeration>Advanced</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_3f660234</spirit:name>
+      <spirit:enumeration>All</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_5e9d103c</spirit:name>
+      <spirit:enumeration>Signed</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_8506c89f</spirit:name>
+      <spirit:enumeration>Signed</spirit:enumeration>
+      <spirit:enumeration>Unsigned</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_a63914d2</spirit:name>
+      <spirit:enumeration>Area</spirit:enumeration>
+      <spirit:enumeration>Speed</spirit:enumeration>
+      <spirit:enumeration>Custom</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_dd381b21</spirit:name>
+      <spirit:enumeration>Automatic</spirit:enumeration>
+      <spirit:enumeration>Block</spirit:enumeration>
+      <spirit:enumeration>Distributed</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_1031a51f</spirit:name>
+      <spirit:enumeration spirit:text="Quantize Only">Quantize_Only</spirit:enumeration>
+      <spirit:enumeration spirit:text="Maximize Dynamic Range">Maximize_Dynamic_Range</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_18e22ec6</spirit:name>
+      <spirit:enumeration spirit:text="Full Precision">Full_Precision</spirit:enumeration>
+      <spirit:enumeration spirit:text="Truncate LSBs">Truncate_LSBs</spirit:enumeration>
+      <spirit:enumeration spirit:text="Non Symmetric Rounding Down">Non_Symmetric_Rounding_Down</spirit:enumeration>
+      <spirit:enumeration spirit:text="Non Symmetric Rounding Up">Non_Symmetric_Rounding_Up</spirit:enumeration>
+      <spirit:enumeration spirit:text="Symmetric Rounding to Zero">Symmetric_Rounding_to_Zero</spirit:enumeration>
+      <spirit:enumeration spirit:text="Symmetric Rounding to Infinity">Symmetric_Rounding_to_Infinity</spirit:enumeration>
+      <spirit:enumeration spirit:text="Convergent Rounding to Even">Convergent_Rounding_to_Even</spirit:enumeration>
+      <spirit:enumeration spirit:text="Convergent Rounding to Odd">Convergent_Rounding_to_Odd</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_24981fac</spirit:name>
+      <spirit:enumeration spirit:text="Not Required">Not_Required</spirit:enumeration>
+      <spirit:enumeration spirit:text="User Field">User_Field</spirit:enumeration>
+      <spirit:enumeration spirit:text="Chan ID Field">Chan_ID_Field</spirit:enumeration>
+      <spirit:enumeration spirit:text="User and Chan ID Field">User_and_Chan_ID_Field</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_2c8455e6</spirit:name>
+      <spirit:enumeration spirit:text="None">None</spirit:enumeration>
+      <spirit:enumeration spirit:text="All">All</spirit:enumeration>
+      <spirit:enumeration spirit:text="Data Path Fanout">Data_Path_Fanout</spirit:enumeration>
+      <spirit:enumeration spirit:text="Pre-Adder Pipeline">Pre-Adder_Pipeline</spirit:enumeration>
+      <spirit:enumeration spirit:text="Coefficient Fanout">Coefficient_Fanout</spirit:enumeration>
+      <spirit:enumeration spirit:text="Control Path Fanout">Control_Path_Fanout</spirit:enumeration>
+      <spirit:enumeration spirit:text="Control Column Fanout">Control_Column_Fanout</spirit:enumeration>
+      <spirit:enumeration spirit:text="Control Broadcast Fanout">Control_Broadcast_Fanout</spirit:enumeration>
+      <spirit:enumeration spirit:text="Control LUT Pipeline">Control_LUT_Pipeline</spirit:enumeration>
+      <spirit:enumeration spirit:text="No BRAM Read First Mode">No_BRAM_Read_First_Mode</spirit:enumeration>
+      <spirit:enumeration spirit:text="Optimal Column Lengths">Optimal_Column_Lengths</spirit:enumeration>
+      <spirit:enumeration spirit:text="Data Path Broadcast">Data_Path_Broadcast</spirit:enumeration>
+      <spirit:enumeration spirit:text="Disable Half Band Centre Tap">Disable_Half_Band_Centre_Tap</spirit:enumeration>
+      <spirit:enumeration spirit:text="Other">Other</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_30d5ecb6</spirit:name>
+      <spirit:enumeration spirit:text="Not Required">Not_Required</spirit:enumeration>
+      <spirit:enumeration spirit:text="Vector Framing">Vector_Framing</spirit:enumeration>
+      <spirit:enumeration spirit:text="Packet Framing">Packet_Framing</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_3ab545a3</spirit:name>
+      <spirit:enumeration spirit:text="Not Required">Not_Required</spirit:enumeration>
+      <spirit:enumeration spirit:text="Chan ID Field">Chan_ID_Field</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_433eb1cb</spirit:name>
+      <spirit:enumeration spirit:text="Inferred">Inferred</spirit:enumeration>
+      <spirit:enumeration spirit:text="Non Symmetric">Non_Symmetric</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_74144f21</spirit:name>
+      <spirit:enumeration spirit:text="COE File">COE_File</spirit:enumeration>
+      <spirit:enumeration spirit:text="Vector">Vector</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_77253c53</spirit:name>
+      <spirit:enumeration spirit:text="Input Sample Period">Input_Sample_Period</spirit:enumeration>
+      <spirit:enumeration spirit:text="Output Sample Period">Output_Sample_Period</spirit:enumeration>
+      <spirit:enumeration spirit:text="Maximum Possible">Maximum_Possible</spirit:enumeration>
+      <spirit:enumeration spirit:text="Hardware Oversampling Rate">Hardware_Oversampling_Rate</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_789dfe7d</spirit:name>
+      <spirit:enumeration spirit:text="Single Rate">Single_Rate</spirit:enumeration>
+      <spirit:enumeration spirit:text="Interpolation">Interpolation</spirit:enumeration>
+      <spirit:enumeration spirit:text="Decimation">Decimation</spirit:enumeration>
+      <spirit:enumeration spirit:text="Hilbert">Hilbert</spirit:enumeration>
+      <spirit:enumeration spirit:text="Interpolated">Interpolated</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ab4ea833</spirit:name>
+      <spirit:enumeration spirit:text="Systolic Multiply Accumulate">Systolic_Multiply_Accumulate</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_b6c64168</spirit:name>
+      <spirit:enumeration spirit:text="Single">Single</spirit:enumeration>
+      <spirit:enumeration spirit:text="By Channel">By_Channel</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_eb2746f0</spirit:name>
+      <spirit:enumeration spirit:text="Integer">Integer</spirit:enumeration>
+      <spirit:enumeration spirit:text="Fixed Fractional">Fixed_Fractional</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_f611af79</spirit:name>
+      <spirit:enumeration spirit:text="On Vector">On_Vector</spirit:enumeration>
+      <spirit:enumeration spirit:text="On Packet">On_Packet</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:description>The Xilinx FIR Compiler LogiCORE is a module for generation of high speed, compact filter implementations that can be configured to implement many different filtering functions. The core is fully synchronous, using a single clock, and is highly parameterizable, allowing designers to control the filter type, data and coefficient widths, the number of filter taps, the number of channels, etc. Multi-rate operation is supported. The core is delivered through the Xilinx Vivado IP Catalog and integrates seamlessly with the Xilinx design flow.</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">channelizer_fir_compiler_v7_2_i0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>GUI_Behaviour</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.GUI_Behaviour" spirit:order="2">Sysgen_uUPP</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CoefficientSource</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CoefficientSource" spirit:choiceRef="choice_pairs_74144f21" spirit:order="3">Vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CoefficientVector</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CoefficientVector" spirit:order="4">binary:53EDD9A1575BBDBF52C80504EA77BDBFBA13CAAF3D0EB53F5133219D6CCCB1BF4F1522296EEBB03F88E473043809B1BF9E7C08FD4A83B13FB9A512CCE9DEB1BFA85CEF3850BAB13F000000000000F03FDC3771727DD4B33FAFE306BF0EDBB2BF065C3CD29519B23F84EE17D3A968B1BF8157FFD3CC26B13F5DF555520FEAB1BFC5D2C5218204B53F2DE2BBD9EF02BDBF2EDD42E63FB4BDBFE02E93FBC5B5D83FA037C66E8202BDBF9DC146B764EBBDBF5BD2FA1E7E15B53FD92260517BACB1BFD796E260EBADB03F89564603CFA7B0BFFE7819C266EBB03F2135B22A52E2B0BF3D065820284CAF3F0C21961793FEEF3F980B1A777CF4B53F95CE31D9A0D6B3BF5E59B2E332AEB23FC79CBB6318C6B1BF6B14A5330360B13F280A572D6A05B2BF5CC9C25D69F8B43F2E8D078CD58CBCBFE592C8FC5D0BBEBF8EAB785954935ABF20BCFA7354A9BCBF726FB836695DBEBFD21978AE451AB53F86E4EBE1408AB1BFA71CFD114E6EB03F187599847D44B0BF03DBD0C8FE51B03FA45BCF61D0CAAFBF357E879ACE2FAB3FE3229183B9FBEF3FE0C727962B1AB83F1F112AC47CD1B4BFD146587C0841B33FFF2466B36D21B2BF3725F36EF996B13FF9CFECE75B1EB2BF7D874AA3B5E9B43FFEF972200015BCBFBC2ABE613E63BEBF62D6DEE5E3EC5ABF8672D00FD54FBCBF859D66E8EFCDBEBFB175AF7A921CB53F280754A2C165B1BF8F5BF2A89F2CB03F5705C360A5BEAFBF71622A64536EAF3F1A6332F29AD0ADBF5073D0BED31FA73F29F7233273F7EF3F322F87BE6D45BA3F04E9AE6B87CBB5BF46C6097F0BD2B33F06E1AA39AC7AB2BF105271A9C0CBB13FE362DAE70835B2BF4EFF39C6ABD8B43F4712BEDCEF9BBBBFBE8E049691BABEBF864DF696428B5BBFAF4D84B70BF6BBBF07A0BA14F13CBFBF4E2B8172621CB53FB4D99167013FB1BF3E19D7FBD0D1AF3F49184CE7B7F0AEBFFEC3443EF735AE3FDB282EF43FD6ABBF13B1AC3E6C1CA33FDDAAE916C1F1EF3F75EDF2951A76BC3F954F023596C4B6BF1B281E281A61B43F72C1BDBCB6D1B2BF909DBA3F3EFEB13F3DEEC9385A49B2BFC5FB30C23BC5B43F45EE51989E21BBBFBFC9B5EC5611BFBF246A25C22F6E5CBFF8329619FF9BBBBFEC25553866AABFBF614D5A4DB519B53FE3115F590616B1BF2F86A9956746AF3F97A0EC98541FAEBFCF042B931AFBAC3F3EB689BA06DCA9BF252CC538B74B9E3F2E648AEFA2EAEF3FD78B167016ACBE3F5B66B82E8EBCB7BF11F14F8425EEB43FE14A0F6C8426B3BF2E8036AB6B2EB23F7071450F4A5BB2BF9FE7491762AFB43F72A353BE0CA6BABFC8B818EA8B67BFBF8613140872955DBF4184D973B741BBBFE23CB372230BC0BF378968818814B53FCBB59CEAD3EAB0BFE2DBE46912B7AE3FCA98E4EC934AADBF4AADF4A8E2BDAB3FBA4278F827E2A7BFC470E400A878963F47C745A119E2EF3F55254C919E73C03FD06F2DC74DB3B8BFFF855C4D1A79B53F485F2B850B79B3BF1513EB12455CB23FCCFE6DDDD76AB2BF93CD3A322197B43F591895F73E29BABF42DC1F6D2CBDBFBFAC4A5731F7005FBF318C3CC03AE7BABFEA95F5B14640C0BFA2EAC6C9DC0CB53FE1FBD67771BDB0BFA7B164FDE923AE3FAD21E9369872ACBF327A85467E7EAA3F3DC3FEC9E3E8A5BF2944251330808D3F0DA2480026D8EF3FB9DCE8D2B493C13FD03E2175B1A8B9BF399B0D32E201B63FD248B3303FC9B3BF70C361DCC487B23F68B763620378B2BFCB9967617D7CB43FFC0A68AE3BABB9BF38D237251A09C0BFA831F6CC315860BF681C5B2D918CBABF8C0683C29874C0BF9197F535B002B53FDEDE83CBE38DB0BFB610E589028DAD3F0B58D10C8197ABBFB3E167671B3DA93F324B3F107BF0A3BFD49E08C5DF897C3F874AD1B9C8CCEF3FC2586A3E3CB6C23F5EC4A82B979CBABFE2365C786788B63FA277E7161217B4BFD32A27B4E4B0B23FF1A3CF97CC82B2BF6EBA6BC47C5FB43FF0FDE3130C2CB9BFAE79B1804E33C0BFA7F7A279EC5161BFB3E65F14C131BABF64BD596616A8C0BFB0832EF301F6B43FA3EB41F32F5CB0BF36E8E1226FF2AC3F69FEF27A6BB9AABFD43468ADE4F9A73F1717C5FE2AF9A1BF49D5443ECFF337BF297BBEA802C0EF3F0FE6FBDA22DBC33F1B705860DD8EBBBF1888F5E0940CB73FA378525F7662B4BFB8578DBC9CD7B23F308D4A9B318BB2BFFECA6D1C2440B43F86E36091B8ABB8BF3DDAB9A8305DC0BF6D96590B7E6D62BF3C7060B1D0D6B9BF7616C2DBBCDAC0BF341AF2BBD2E6B43FB2BBCDAD5C28B0BF4E3AADF94554AC3FFE8413CB76D8A9BF2681E7BF05B5A63F3E54B6503003A0BFB4C014D860197FBFA548C5C8D4B1EF3F836955895602C53FAE93478F637FBCBFF0CE0927578EB73F1EE7A02C60ABB4BF7374BD83E6FBB23F3E78027E3191B2BF0AFA945C791EB43F1831E17D4B2AB8BF0C172AF9BC86C0BF6DBF69B9F1AA63BFB8660F9BC77BB9BF6D55BFD7880CC1BFB0EF9BAF22D5B43FA840740FE1E4AFBFA313F0769DB2AB3FD23514B3C2F4A8BF090BC753AA6EA53F44A95B5E8D1D9CBFB33074A686218EBF5339FA5440A2EF3F5E75842DC42BC63F6F0D8DFF076EBDBFF282F1A39A0DB83F88767795C3F1B4BF6507FA43BB1DB33F723D186BCA94B2BFBD00BA4981FAB33F73AF125FCEA7B7BF4ECBEC1BF0AFC0BFAE89145B410A65BF19C203EFAC20B9BF539D212E773DC1BF359FC21DF2C0B43FD89D5490E474AFBF6FDD1CCF8C0DAB3F17423828700EA8BFCD954CA3FF26A43FACCB9BE7553898BF642A7F70B03E96BF8C6F9A8F4691EF3F586576795857C73F5F8111E5A85ABEBFA03201474C8AB83F57A3CBD09535B5BF8AF3C771153DB33F4DCEFA5CFB95B2BF3B10BFEA40D4B33FC1CE72C24A24B7BFF8B176EAC6D8C0BF9B2C8D0D438B66BF5AEFD89F87C5B8BFDED7DFBA846DC1BF93C6D63E41AAB43F0502FADBD000AFBF82477F612A65AA3FB0BF90489F25A7BF30971A2832DEA23F3DFF7948325794BFED41F0F9C14F9DBF97ED06CFE87EEF3F37F217CAFF84C83F5FBBCFD02345BFBFF721CDA85804B93FE5291A45CC76B5BF77F37E31F059B33F9209193AC494B2BFF0A98244BEABB33FAA4BE583CB9FB6BF775244803D01C1BF5F665056EC2D68BF0B4F6E375E6AB8BFCB40B09CAE9CC1BF6CE3B0C41091B43F60ADBA76B388AEBF1977028B8CB9A93F256DE0C16F3AA6BFF55A89906D94A13F7B7F3B43987A90BF421A10B6CE21A2BFAE9CF577286BEF3FB04B2A67A6B4C93FAA2A7405AB16C0BF67766BDEAB7BB93F9632A1B65BB5B5BF891228FA4574B33FDF6E3C252491B2BFA2B3B46FFE80B33F9FF06BE25A1AB6BFB6CA9AF24F29C1BF98D9CA513AF269BFED037EE2360FB8BFF9D5384AF2CAC1BF1557E33A6275B43F875362799B0CAEBF2ADBDCCACA0AA93F5ADC7EC8014DA5BF2748DD4EDD49A03FACB40BD7F64589BF871C9DEBF58CA5BF91D2C9F90656EF3FFC26C9E638E6CA3FDDAEC5F68E89C0BFF0C0813933F0B93F1D5E1C293AF1B5BF1449645F128CB33FECB52FF31A8BB2BFF37175850654B33FDCB5C6B90294B5BFA18D7A60FA50C1BFF7FEB46131D86BBF7DCD368D18B4B7BFF841DA0A4DF8C1BF1A3C9F2B3757B43FBD66106F988CADBF9E7ECD1CFD58A83FACE569B4755DA4BFA7BEE51B58FD9D3F9284335295A181BF809E2E752FE9A8BFEB766A08863FEF3F59C1283DA319CC3F6A14B79A2CFBC0BF0E8B21D7DB61BA3F5E3B59EE5D2AB6BF8737AEC151A1B33F93CE2A6DA982B2BF2746DF21DC24B33FCC0F93C5CC0CB5BF952EC5FD3878C1BF6464ABFAD7DF6DBFE94E7C110A59B7BF59F3B132BC24C2BFA9E0AC6B9136B43F14B09916BB08ADBF8444F4633DA4A73F21F1286AEE6BA3BF01E87D580E669B3FA0ABD005E11174BF9047DDAE5436ACBF691B8A70A727EF3FE9A0DE27D14ECD3F995895A1726BC1BF9861613692D0BA3FC85019C2BC60B6BF804A7F5600B4B33F31BFBFA5D077B2BF945B031085F3B23F70B44C44C284B4BF4839486E089FC1BF837A43828B0470BFE92513A012FEB6BFB678C3BC3C50C2BF512617C67113B43F25E46FC31181ACBF07A9781CA3ECA63FC11847198D78A2BFA13E30E936CE983F14D0BB656DE753BFAF4B734A3F74AFBFCA5FBE006D0EEF3FAC44B4D5AE85CE3F542E196350DAC1BFBDC5D3D8433CBB3F0E228B094D94B6BFA29593211BC4B33F41959E0A936AB2BF631F40CF08C0B23F94B270C3EDFBB3BFF81C75F364C5C1BF8F9B7F23F12971BF3EC966A737A3B6BF86CAD27ACC7AC2BF9B274431DAEDB33F5ECACC8AABF5ABBFE7AF9EA94432A63F7828D7337083A1BFBC4B3BEA2336963F16FA887B7A06643FC6711B2D6751B1BF27FF38DFD8F3EE3FB0B5EAB227BECF3FED0511EEB447C2BF1F363488DDA4BB3F7A2C67DF03C5B6BF212A39A39DD1B33F6413130BF25AB2BFCF11EFB06E8AB23F1A9EB6FF5972B3BF539A0AB44AEBC1BF0C512154176072BFFF9EEC4F7E48B6BF284634FF69A4C2BF70963D18CFC5B33F6CFD5A789D66ABBF3CB02DAB3E75A53F952CAABEBB8CA0BF627C1A71309E933FDC19152AA6E3783F0B59B3DAEFE0B2BF234EF831EDD7EE3F7ADC52D4137CD03FB3B6786290B3C2BFFE7A82524E0ABC3FBF7C94B5D7F2B6BFDE88B98E83DCB33F90A053C4EE48B2BFE4747701BE52B23FEB62303612E8B2BFBCA9024FB510C2BFFFB2C89111A773BFC874E247F0EDB5BF223D619311CDC2BF6AB64CAF509BB33F9FCF5B70F5D3AABFE7B6CCBAA7B5A43F898724221D299FBF023B63F4AD06913FDBF880F7E0D2833FADCD4383AB68B4BF4C0D858DACBAEE3F92B84DC0CC19D13FE23D6ACDD21DC3BFE119667B866CBC3F82847B3BC01DB7BF6C36A5C5C8E4B33F185203368934B2BFFE954328FC18B23FB611D7831F5DB2BF70351D48A135C2BFEBF03981E5FE74BF042E97D79093B5BF70DE1229C2F4C2BF21590864636EB33F8AE564F2C73DAABF5B18FFF19BF3A33F6700B4ED17369DBFDD2B8694E8DF8C3FF13336EEF2238B3FA24526788CE8B5BF22041DCC199CEE3FB205FE7833B8D13FE5EC5F156C86C3BFAA39233C78CBBC3F74DF6BA4B845B7BF2ECBE1D56CEAB33F89E7CCE0C31DB2BF8805C2652FDDB13F1E302CFD89D1B1BF095AAB830C5AC2BF734142A95A6776BFF56A51F76739B5BF45C8DF03791BC3BF9906E222093FB33F5EB5159525A4A9BFB93FCB61342FA33F25007911AA409BBF86772643AFB4873FAAC92CC61D32913FD095BB0E8760B7BF74487B52387CEE3F4B4EE9683B57D23F6C53129C49EDC3BFAF577D131327BD3F87FAECEDBC6AB7BF456F5E8373EDB33F7E77FCD6A704B2BF3C7E2E15669FB13FA68F3B566245B1BFF4AB68C1F07DC2BF15A28186B0E077BFE11817D67ADFB4BF7A7BE4813441C3BF42AD0883450DB33FB841570C2107A9BFE39C95528B68A23FC29ABB0E174999BF9ED4B08A588C823F2857AC7978C9943F9AB0569491D0B8BF9B9C1A450C5BEE3F7EAAEF2DD5F6D23FAB184FF85052C4BFD0E1145C337FBD3F4F2B3B26B58CB7BFF2C15BD1CDEDB33FEF3B89D42DE9B1BF441F5194A05FB13F678A0FEBADB8B0BFC9B2AD2C4CA1C2BF6057FEABBE6A79BFE3CB4A8ECF85B4BFD31D0AE9F265C3BFAEB29E9E1CD9B23F657F62B2CF66A8BFC6428747C29FA13FC85DADC4D54F97BFD9DBE99FAED37A3FBF93EE843512983FFF123A46D636BABF383D2F488738EE3F4D9F18BE0797D33FA072970287B5C4BF06B1B3B9E4D3BD3FE9B3F3D3ABABB7BFCBDDC48885EBB33F335C6ECD5FCBB1BF42744547EB1DB13F01334E3D7A2BB0BFD775CE3B1AC4C2BF26E6B21199057BBF35B515256D2CB4BFC5CDAC86B189C3BFC8D3CA678EA2B23F9619984633C3A7BF1F1A9A80C6D4A03FB4E1708A175495BF773E72B1FA87703F5950DBA027EB9B3FEC1D1F702D97BBBF2A933C01C514EE3F3EC40D72B537D43FF658796ECA16C5BFC03A4BD50525BE3FCE1F39EC90C7B7BFF9D013B294E6B33FEBD7257E3EABB1BF04F338D94CDAB03F5D1F8E3AA23BAFBF46E2AFAC57E6C2BFC41E271439B17CBF710D39B955D3B3BF62CE503372ACC3BF9114A757AC69B23F9C8B3982931CA7BF594CE2B42108A03FBE70A4E9385893BF5CBF2A25CD50593FD531115E7B649F3F86C123D394EEBCBFCE62E936BAEFED3F98131D75DBD8D43F5B9EA40E1176C5BF4BBD76A38C72BE3F342F4B6460E0B7BF3D63C5D2FBDEB33FFBCC3B5ACE88B1BFD3AE4C31CE94B03F655EAD2F7B1FAEBF94821E0B0108C3BF97CCDD37946D7EBFEC71BE4D987AB3BF2FF5FDFC2BCEC3BF48D8BCA6632EB23FC1B6E457BC72A6BFED32F736EE729E3FA4C4777FD55A91BF6C2F1CE464B14EBFB23F01B1DC69A13FE3A0BD19C53DBEBF6BF9F3B76CC9ED3FEB69E3326D7AD53F68E4F0C749D3C5BF1C038C6469BCBE3F7A18DCBA13F6B7BFEE489560BAD4B33F0082019E1364B1BFDF306193784DB03FF6E960509702ADBF963B2D171229C3BF8954070A661D80BFCEA6DFB72E22B3BF63932BE3E4EEC3BF5B4791DCCAF0B13FBDEFC009EAC5A5BF3673283613D29C3F160CD964E0B88EBFA2196390B1EA6BBFA6AB56583E1CA33F4B0F3F67B384BFBF9F54FF8FDFA1ED3FE88664645F1CD63F9B492173642EC6BFBDBFF8498D02BF3F191B63B0A408B8BFB1FBC463CFC7B33FB93E6B73113DB1BFD448F1525304B03F83A4FC5508E5ABBF5AE2020C8949C3BF9AB2C237420C81BFAD6219D124CAB2BF6B07AC11990EC4BF19606CCAE4B0B13FA6EB430D3616A5BFBDD7BDD2022E9B3FE987DFA2DABA8ABF71859DE2AF0778BF3750169631C9A43FB6C470CAAA61C0BFFFE6D5DB1579ED3FE80E0BC9A6BED63F00B7BD595187C6BF3B28BB1BEB44BF3FD55543330F18B8BF1DA48EA73CB8B33FB628DB93CE13B1BF459D5348D572AF3F1D5FB4D8EDC6AABFBD65D1195F69C3BFF0E9A8E8A50382BF50BF99678172B2BFE31F84BC452DC4BF8BC306C1B26EB13FC5CB5706B163A4BFCCE150B3F686993F3AA862643DBC86BFB8D5F161DA0581BF25CAF9A78770A63F7B7DA97AD1FCC0BFFECBF5EE124FED3FF5D0C0B63761D73F0A6E41EFFFDDC6BF37A306817383BF3FFB70765F4C24B8BF87020A0A00A6B33F3375D8524CE8B0BF1A2EC63986D9AE3FC67F2DE052A8A9BF371795019488C3BF90F621415A0383BF02CAB234481BB2BFAE49DAE2E94AC4BFD6B8DEA5382AB13F959D11B26CAEA3BF71405E1423DD973FB278B0A89DBD82BF1F2B16BEF9FF85BF55EC0BBA1012A83F14671118C993C1BFA63954F7D923ED3F5EDBAC0A0704D83FD80A502C6132C7BFA670CE261BBEBF3F0D2D19655A2DB8BF87B5E3A51D91B33F22464E4D93BAB0BFCED96B24D33CAE3FB6DCBA9C5389A8BFAE8BCD6823A7C3BF9611418D600B84BF2A6803897DC4B1BF67359BE58467C4BFF416FEA17BE3B03F4BB63EC27BF6A2BF8A77956AB730963F24702C20F77E7DBFABE9348191F18ABFF0781FE9A1ADA93F67E185698E26C2BF5F8203886EF7EC3FFB9926DE08A7D83F50DDCD736484C7BFF9BD6DE0D2F4BF3F26C3EE1F3333B8BFEED766299579B33F8ED2A833A88AB0BFB22B9893CF9CAD3F9B76E9B0086AA7BFA7ACE60509C5C3BF3767FDABC61B85BF765F4C0C266EB1BF4ABB6A811683C4BF332CD6BA829AB03F73D87085F53BA2BFEA27238BEA81943FED982A94BD8475BFA0342EF4F5D98FBFC69DA5920D43AB3F3387D08B1DB5C2BF17543EFCD3C9EC3F6178A9F0314AD93F395758B4FAD3C7BF44C38C36C713C03F07E6D689D235B8BF8D570044675FB33F6B1B508A8F58B0BF15F3CE968CF9AC3FFE2C279C864AA6BFE0C232B341E2C3BFE2F21EEB8B3486BF1DDF38014818B1BFDE5EE4A89D9DC4BF746A0FED534FB03FA6318E2BF07EA1BFF08BA028F0D0923F03563814051B6BBF2CCB2FE4465C92BF7C6CEFB82AD2AC3F517BCFE0733FC3BF6A400EF90D9BEC3F1E9411B576EDD93FAC94EDEA1421C8BF00ECC64E212BC03F9BC06A523635B8BF2206E5A89642B33FC49F1CC04F24B0BFFF6583411E53AC3FA7E82F4AE32AA5BF9A494951CAFEC3BFC6D5F0F1AA5587BFB7C7FBE2E8C2B0BFADBFA49019B7C4BF57A2DAF0F501B03F02BAB85684BFA0BF30A2B3ED011E913FB6D4D2B0276956BFFD4388425EC694BF40158E33D05AAE3F4430CC258FC5C3BFB8E9244F206BEC3FFE7C0246CB90DA3F380AC187A36BC8BF1D543BA77140C03FF74BBF7D5B31B8BF08DBFAC92523B33F308E0FCFDEDBAFBF72356E6799A9AB3FEBCE540D350BA4BF0388E4DB9F1AC4BF56305DAE167F88BFA8534F590E6EB0BF04495A2389CFC4BF37454782DD64AF3F8647BC5F93FB9FBFDD5A2493B2D28E3FD4BA1AA2409F423F89F6F5C7F22A97BF1A0FF3E6D3DCAF3F984AF2D06C47C4BF747E3FBD0E3AEC3FE2FE3EEE2334DB3FA3030C6597B3C8BFB7CFAF7BB253C03FA5DB16673F2AB8BF70C214631701B33F624E8707EB6AAFBF3840CB6D14FDAA3F96C6C05294EBA2BFA36B12A1BE35C4BFB7E53C2CCCB089BFA9E11157BD19B0BF0124F87DEBE6C4BF8296778088C1AE3F626336DDAD739EBFBA4C5CC859668B3FE6264DF24378643FDA34C530BD8999BFDD995C8107ACB03FA579A3FE0AC5C4BF97E32C1CDD07EC3FE1FD2FF274D7DB3F9CC3FF8BE1F8C8BF3A26A52FDE64C03FF3264161DF1FB8BFCB101DCF6DDCB23F1CD85CE9D0F5AEBF5F2AC044A44DAA3F4DBD951018CCA1BF28D194192350C4BF9E8326AAC8EA8ABF3B346613F48BAFBF1B4EF24840FDC4BFBD7797F6FA19AE3F670657358AE79CBFB079B15570F7873F08787CAE651D723F43041EFE76E29BBF46ABE8222E66B13FF5554E43683EC5BFC48ABE588FD4EB3F8E6034A0B27ADC3F4AA02B6F733BC9BF3E034BAFEF73C03F3E5919B73912B8BF00AF25272CB5B23F796A19079E7CAEBFEC2918135E9BA93FD6E1B9BED6ACA0BFD65084C5C969C4BF3C641FAD0D2D8CBFD34C330B93E5AEBFBD0E16CB8612C5BFE31811B6416EAD3F466235EF58579BBF615784136E86843FA336F862AEF6793F49335318DA349EBF857FC9F3CB1CB23F669B86C283B3C5BFED37818029A0EB3FE0673C2FD11DDD3FD0F9D2A53E7BC9BF37AA5736E280C03F1E101A6B4D01B8BFCE601A3A568BB23F05543F0861FFADBFD03A827F57E6A83F730E0242CC1B9FBF4E101068AF82C4BF626456A29D778DBFE7014F856040AEBFFBB76570BE26C5BF9B08C02569BEAC3F52C34B5C48C399BF057AD6BCC713813F638220157BE3803FC27845595040A0BF027E99A2CFCFB23FC46495245D24C6BF5D1E0FC5AF6AEB3F3C1CE1AAC4C0DD3F097526AE34B8C9BF081AA406B18BC03FC74770B319EDB7BFA584D035F05EB23FB5F9687B297EADBF1D1686E7A62EA83FDC407977B6DE9CBF65729B59D19AC4BFA61B2F9C71CA8EBFAE40BBA1639CADBFB4B2C233E739C5BF3EBD4C377F0AAC3FD18D458B872B98BFA6768ACFE33F7B3FBC22DC8298C6843F848AE75FC162A1BFDFE5697E277FB33F75C7E70CF490C6BFEA15EB592634EB3F57F4EB2C8163DE3F06DBD53C47F2C9BF53BD4A975794C03F11375A2D9ED5B7BF3E3719E0FE2FB23F7C797CE108F9ACBF474CE5A56574A73FC8A969C29BA29ABF18FF978D2CB2C4BFEAF88CD5C31290BF54D058FFA4F9ACBF626649F7004CC5BFECDBAC699152AB3FDC622A35429096BFE399B6DFAA56743F66273EE134A4883FC501A46A9E81A2BFA50D33D4C22AB43FEE372D8A48F9C6BFA422878491FCEA3FEAEFDFCAFA05DF3FA289CD136829CABFD1CDA144D19AC03F832B62C3D9BAB7BF6B9D2EF085FEB13F3360979F0E70ACBFD0C11603ACB7A63FAD3C5B4BAB6798BFE91F260DBEC8C4BF22D4C2E66FC490BF0AA91D472B58ACBF6C5766740C5DC5BF23810A44B196AA3FE376553AAAF194BF33EDFF9F7ED96A3FD7A4F6DCD67B8C3F37FD62CCC69CA3BF4AC70F9C91D2B43F08509DE85A5DC7BFEB47F885F5C3EA3F36E9E8E225A8DF3FC3670BDB895DCABFE9B45B5E1A9FC03FA22007D7CC9CB7BF96A566D289CAB13F6DCD78E149E3ABBF7CC6764F91F8A53F1913804A112E96BFDA0ADD9283DEC4BF4F228F4E377A91BF82A8800F01B8ABBF1D0603DF096DC5BF5C2DC285F0D6A93F1BAA2E38F44F93BF0D5C3E1F050C5A3F8DE4433E8426903FC787B55D1CB4A4BFBF780AE48576B53F702389AA2CBDC7BFA9D2C6E3568AEA3F70E56047FB24E03F2E0EDA479F8ECABF70E110B82FA1C03F3C4EB785797BB7BFE96A11091194B13FE56002D2CD52ABBFD4244EED3037A53FF4E66C0002F693BF940B54417AF3C4BF3B7942D2163492BF2C108A3F3219ABBF9D7C4C03F97BC5BF3A0FDF0F6113A93F7FFF08E759AB91BFFDB0A641AA6319BFC7DB5E74A10B923F8501C0C17DC7A5BF6CEFCF3C9116B63F3A7CD0B2BF18C8BF9B9C1059BA4FEA3F187C6C33B075E03F096F6DF799BCCABF535CF3E90CA1C03FE258348CDF56B7BF7BFBDC01205BB13FE24D40EEA9BEAABF0A0E0650A373A43FB3EA3FFEADBF91BFBB662FEA9F07C5BF970C00DC02F292BF15133806CD7BAABF8C30F64BD889C5BFA96E2B4D0E4CA83FA4C79A5F0B0490BFC6993587FF2F5DBFFE683121FDEC933F06F7994EC5D6A6BFB8DAED12A2B2B63F3F5F27181470C8BFC6FD231F2414EA3FF0658B0F2CC6E03FFEC351AC6DE7CABF80884D72AF9EC03F923161CD012FB7BF0BC669DCBD1FB13F4CFC1A34F226AABFECE4845105AEA33F62BAFFB5A0168FBF86544E58F11AC5BF8956C9E4F1B393BF398B752ED8DFA9BFF360E25DA696C5BF6CF17781FD80A73F5271090943B48CBF9A92AD65BB5F6CBF98FBE93174CA953FCE97F2F2DEE1A7BF6DD9DC2BAF4AB73F5AC15C852DC3C8BFC9FC112999D7E93F2DD232B36816E13F0CC32BCE0C0FCBBFC05AF6B7139AC03FA1A62F52E103B7BFD872083EF0E1B03F7C88BE66B88BA9BF8D4464D672E6A23FD34BF4BA50B28ABFA82B7B746A2DC5BF563C2B55DD7994BF8F495E943445A9BFB59EEC086CA2C5BFA28FF4D55AB2A63F8C0265AAF35B89BF1A718AA7C60F75BF0CE20505B4A3973F4E1B7086A4E8A8BF990CFCECA8DEB73F7BCD22910D12C9BFEB3D84061E9AE93F892193506066E13FEABF8B1C6B33CBBFC2ADEF453793C03F23A591CA80D5B6BFDAC392F7BDA1B03F1E5737F50FEDA8BF4615C0F1091DA23F83E671D2025386BF95D09891043FC5BFB4ED0B79D44395BF29A39BDE25ACA8BF5A6B912B20ADC5BF69E442EF1EE0A53F4F477CE052FF85BFC47D730127EB7BBF593C9AC18D78993F70EAFF65FCEAA9BFBA0C5067846EB83F8879FB9AB75CC9BF025C579BB75BE93F1F3010EB0CB6E13F136C2E1C7C54CBBF2E0088A5178AC03F937EDAFEE2A3B6BFDC141BFB2D5FB03F66662DB20C4BA8BFB219DC76EA51A13F3A03B77C6FF981BFB9D9221AB44FC5BF76A19974231296BF88411CB28B14A8BFF8927181C8B6C5BFA77A0914660AA53FB52BB939DF9E82BFD07C2E98816081BFC3C1A2BDC2489B3F81E84222C8E8AABF88B78F7035FAB83F6DABBDD72EA3C9BF371382CC6A1CE93FA6D0BA836805E23F1894C81F3372CBBFC84C7443B17EC03F5A541383016FB6BFEC226151171AB03FD1BF4AA1099EA7BF7F181591417FA03F14551FB28C417BBFB7A4B9A39F5FC5BF745FED5B03E496BFC7AFC6AE797EA7BFECEEF94964BFC5BF94D201163F31A43FA5D5015FF2757EBF8BDCE27C42C884BF94B2695A1A149D3F158D3925EBE1ABBFA907475BB081B93F890E107676E5C9BF5181C9553CDCE83FB6E27C936D54E23F13DA08D2878CCBBF010CC9820B71C03FE5C4299D1537B6BFC943310EB5A6AF3FC7B3AFAB9E00A7BF69F6FA347C669F3F728BFF3323A372BFFF44D2E9966EC5BFFDDDCE8310BA97BF3D212D19F5E9A6BF9C5BFE78F4C6C5BF5F255448BC54A33F6417739A0DA877BF417AE2EE6B2C88BF5C6FDCA65FDA9E3F1AF5DC854CD6ACBFF47CD295EC04BA3FD741E1199423CABF4D2AA1F6319BE83FBAACB4C014A3E23F5603917463A3CBBFA17CAC220D61C03FA5730B2EB5FBB5BF23A325914F13AF3F731746365954A6BFD90C4CE90CC59D3F68F3E441221D64BFAB6781A7AC7CC5BF6F090F5E089498BF57AD30730457A6BFDCC722177ACDC5BF052B798FF174A23F86D903A1F0D470BF5487F574848C8BBFC33BF74FA94DA03F4545B903CBC5ADBFDA8D43F0DA83BA3F1F189816885DCABF2CC8C11A4F59E83FFB4CB6B45AF1E23F7DE9FFA6CAB6CBBF64B303C5CF4EC03FA05DA5FC41BDB5BF1A97E79AA07BAE3FB8FDB3D028A5A5BFEED8DF9DAF209C3F09E977DEED6938BFA8736AB5DA89C5BF2B54BF25EE7199BF9552C734B0C5A5BF3F61EB6CF5D2C5BF8F50748DEE91A13F6D55E3BC96FA63BFB724A27436E88EBF3C3EAADF662BA13F22892B1059B0AEBF1C588E9D7AFEBA3F97BEB0A85C93CABF2F742E9E9A16E83FFA79E76C373FE33F8B59F1A5A8C6CBBF7FF44040483AC03FFD7318FCAF7BB5BF23E29DDFA4DFAD3F378F8B821DF3A4BF08B09F0E96799A3F24A33BC9FFCF5B3FDF4E5DA81E96C5BF76394F04BC539ABFD808DCDAFB35A5BF6FE1AC5B68D7C5BF20748D27CBABA03F0A79FE891E1149BFDD10F7E3781F91BF755DE25D4206A23F5EC01C98D095AFBF85893E07BC74BB3FCDCC8BD413C5CABFBB93C40819D3E73F8696E75DA58CE33F6A6DF8DBF1D2CBBF6D99B1EE7223C03F6E77C261FC36B5BF13E0895F603FAD3FB10F6CA5483EA4BFC2445305F2CF983F63E6DE2A38C16E3F389DE35276A1C5BF667A2A6969399BBF10063786F1A7A4BF70922FA3D2DAC5BFDF9EA79728859F3FF6CF318260DF4D3F947A226433C892BF2683562E27DEA23F04A18B9A0E3BB0BF6EA3919897E6BB3FC5E53CA1B2F2CABFC39DCD40CF8EE73F62151F219FD9E33F4F52DBFD9CDBCBBFBEEADF4E4F0AC03F1B0B7FCE29EFB4BF60B1BFD5DC9AAC3FA09D338BBD86A3BF42CFE026F823973FC25154EB78BE773FD62DBCEFDEABC5BF5C8CE4D7F4229CBF3897C1F3921BA4BFD050786836DDC5BFCCF34D5BC1AC9D3F97FDA91B0938653FB2179858156E94BF31E78CD7FCB2A33F577BB73595A8B0BF7BFA6EA00754BC3F65578DC83F1CCBBF12DA2FA5C249E73F844E69021F26E43F1FA2F7A3A0E0CBBFE4682871BBDDBF3FF806CA303DA4B4BF0FAA500F26F2AB3FB4A20A3B8ECCA2BF0ED287A9D775953F52392E837C06803F0B5611F656B5C5BFF5E4386C51109DBF50973ADEE690A3BF3DA63CF494DEC5BFFA5BB7FB8ACE9B3F7CBA0EDA417D713F5A2DFECEE41096BF7BFC1943A784A43F44BA85007013B1BF6369571405BDBC3FFB1742E8C141CBBFDFE30EADF803E73FBB3F74331F72E43FA5D76A6BF3E1CBBF73AB18823EA2BF3F1BBE98463E56B4BFB9D1B89B4D45AB3FF76D3022D10FA2BF67F8054FC8C5933FD28431C4AC25843F5EDB4488DBBDC5BF7BAA5A797F019EBF393191C7F407A3BF7259AD0BEFDEC5BF6DFA82D7A9EA993F5E4AF5B0DA5E783F8269240F6EB097BF133012740C53A53F907B2B66937BB1BFBBF775088921BD3FC9DD7FB43F63CBBF23FF49E576BDE63F7113C6BF99BDE43F5C8393338BDFCBBF70295D9E2862BF3FAF4529183405B4BF907C60A06394AA3FDB2336889950A1BF9BF11F8EF913923FA57F9B1F803C883F3E2669456BC5C5BF16C67E4273F69EBF9E6CB92FC180A2BF6448CE1A46DEC5BF74ECD9804501983F1A8D844A02407F3FC6A18D897E4C99BFB756AE4D131EA63F3704F128F4E0B1BFEBAA15678C81BD3FF137AC73BF80CBBFF92752AE4276E63F5FAC3DE58808E53F72BFB28A5ED9CBBF8EF898E37B1DBF3F7C29589127B1B3BFC474B9F87CDFA93FBA8BEFC4FE8EA0BF37CF0C21A260903F295EBB959C4A8C3F74A7664804CCC5BFBE29BC1F22EF9FBFF4F9BFD950FBA1BF8F9FBAA69BDCC5BFEAAFCC428612963FBE7A2FD4F60F833FE3ADC953E6E49ABF48F43317A5E5A63F01AE1ED18843B2BF6463CA170ADDBD3FA224D627489ACBBFB9FE597F612EE63FD4C3F8DBE652E53FC5FD11D563CFCBBF5033289539D4BE3F23B1EED4205AB3BF942C29B7AD26A93F42B7888D2E969FBF864B10FEEF578D3F9445EB55D227903F490CD52CA4D1C5BF1D04D960C375A0BFC30C2C2AA877A1BFDAFACC78F1D9C5BF484FCF7B971E943F556A30EFE17E863FEA96F96672799CBFBE9CF5F8A9A9A73F1926FCEB47A3B2BF7530E5A7FD33BE3FA75C0614E1AFCBBF68B788C5D8E5E53F43E42E02AE9CE53FECAFF22092C1CBBF26BEC2BB6386BE3F229DB2562800B3BF414E1B210A6AA83FA5957640F0099EBF122080B357EC893F62862731A325923F66CC822449D6C5BF93CDCF86CCF5A0BF93CDCF86CCF5A0BF66CC822449D6C5BF62862731A325923F122080B357EC893FA5957640F0099EBF414E1B210A6AA83F229DB2562800B3BF26BEC2BB6386BE3FECAFF22092C1CBBF43E42E02AE9CE53F68B788C5D8E5E53FA75C0614E1AFCBBF7530E5A7FD33BE3F1926FCEB47A3B2BFBE9CF5F8A9A9A73FEA96F96672799CBF556A30EFE17E863F484FCF7B971E943FDAFACC78F1D9C5BFC30C2C2AA877A1BF1D04D960C375A0BF490CD52CA4D1C5BF9445EB55D227903F864B10FEEF578D3F42B7888D2E969FBF942C29B7AD26A93F23B1EED4205AB3BF5033289539D4BE3FC5FD11D563CFCBBFD4C3F8DBE652E53FB9FE597F612EE63FA224D627489ACBBF6463CA170ADDBD3F01AE1ED18843B2BF48F43317A5E5A63FE3ADC953E6E49ABFBE7A2FD4F60F833FEAAFCC428612963F8F9FBAA69BDCC5BFF4F9BFD950FBA1BFBE29BC1F22EF9FBF74A7664804CCC5BF295EBB959C4A8C3F37CF0C21A260903FBA8BEFC4FE8EA0BFC474B9F87CDFA93F7C29589127B1B3BF8EF898E37B1DBF3F72BFB28A5ED9CBBF5FAC3DE58808E53FF92752AE4276E63FF137AC73BF80CBBFEBAA15678C81BD3F3704F128F4E0B1BFB756AE4D131EA63FC6A18D897E4C99BF1A8D844A02407F3F74ECD9804501983F6448CE1A46DEC5BF9E6CB92FC180A2BF16C67E4273F69EBF3E2669456BC5C5BFA57F9B1F803C883F9BF11F8EF913923FDB2336889950A1BF907C60A06394AA3FAF4529183405B4BF70295D9E2862BF3F5C8393338BDFCBBF7113C6BF99BDE43F23FF49E576BDE63FC9DD7FB43F63CBBFBBF775088921BD3F907B2B66937BB1BF133012740C53A53F8269240F6EB097BF5E4AF5B0DA5E783F6DFA82D7A9EA993F7259AD0BEFDEC5BF393191C7F407A3BF7BAA5A797F019EBF5EDB4488DBBDC5BFD28431C4AC25843F67F8054FC8C5933FF76D3022D10FA2BFB9D1B89B4D45AB3F1BBE98463E56B4BF73AB18823EA2BF3FA5D76A6BF3E1CBBFBB3F74331F72E43FDFE30EADF803E73FFB1742E8C141CBBF6369571405BDBC3F44BA85007013B1BF7BFC1943A784A43F5A2DFECEE41096BF7CBA0EDA417D713FFA5BB7FB8ACE9B3F3DA63CF494DEC5BF50973ADEE690A3BFF5E4386C51109DBF0B5611F656B5C5BF52392E837C06803F0ED287A9D775953FB4A20A3B8ECCA2BF0FAA500F26F2AB3FF806CA303DA4B4BFE4682871BBDDBF3F1FA2F7A3A0E0CBBF844E69021F26E43F12DA2FA5C249E73F65578DC83F1CCBBF7BFA6EA00754BC3F577BB73595A8B0BF31E78CD7FCB2A33FB2179858156E94BF97FDA91B0938653FCCF34D5BC1AC9D3FD050786836DDC5BF3897C1F3921BA4BF5C8CE4D7F4229CBFD62DBCEFDEABC5BFC25154EB78BE773F42CFE026F823973FA09D338BBD86A3BF60B1BFD5DC9AAC3F1B0B7FCE29EFB4BFBEEADF4E4F0AC03F4F52DBFD9CDBCBBF62151F219FD9E33FC39DCD40CF8EE73FC5E53CA1B2F2CABF6EA3919897E6BB3F04A18B9A0E3BB0BF2683562E27DEA23F947A226433C892BFF6CF318260DF4D3FDF9EA79728859F3F70922FA3D2DAC5BF10063786F1A7A4BF667A2A6969399BBF389DE35276A1C5BF63E6DE2A38C16E3FC2445305F2CF983FB10F6CA5483EA4BF13E0895F603FAD3F6E77C261FC36B5BF6D99B1EE7223C03F6A6DF8DBF1D2CBBF8696E75DA58CE33FBB93C40819D3E73FCDCC8BD413C5CABF85893E07BC74BB3F5EC01C98D095AFBF755DE25D4206A23FDD10F7E3781F91BF0A79FE891E1149BF20748D27CBABA03F6FE1AC5B68D7C5BFD808DCDAFB35A5BF76394F04BC539ABFDF4E5DA81E96C5BF24A33BC9FFCF5B3F08B09F0E96799A3F378F8B821DF3A4BF23E29DDFA4DFAD3FFD7318FCAF7BB5BF7FF44040483AC03F8B59F1A5A8C6CBBFFA79E76C373FE33F2F742E9E9A16E83F97BEB0A85C93CABF1C588E9D7AFEBA3F22892B1059B0AEBF3C3EAADF662BA13FB724A27436E88EBF6D55E3BC96FA63BF8F50748DEE91A13F3F61EB6CF5D2C5BF9552C734B0C5A5BF2B54BF25EE7199BFA8736AB5DA89C5BF09E977DEED6938BFEED8DF9DAF209C3FB8FDB3D028A5A5BF1A97E79AA07BAE3FA05DA5FC41BDB5BF64B303C5CF4EC03F7DE9FFA6CAB6CBBFFB4CB6B45AF1E23F2CC8C11A4F59E83F1F189816885DCABFDA8D43F0DA83BA3F4545B903CBC5ADBFC33BF74FA94DA03F5487F574848C8BBF86D903A1F0D470BF052B798FF174A23FDCC722177ACDC5BF57AD30730457A6BF6F090F5E089498BFAB6781A7AC7CC5BF68F3E441221D64BFD90C4CE90CC59D3F731746365954A6BF23A325914F13AF3FA5730B2EB5FBB5BFA17CAC220D61C03F5603917463A3CBBFBAACB4C014A3E23F4D2AA1F6319BE83FD741E1199423CABFF47CD295EC04BA3F1AF5DC854CD6ACBF5C6FDCA65FDA9E3F417AE2EE6B2C88BF6417739A0DA877BF5F255448BC54A33F9C5BFE78F4C6C5BF3D212D19F5E9A6BFFDDDCE8310BA97BFFF44D2E9966EC5BF728BFF3323A372BF69F6FA347C669F3FC7B3AFAB9E00A7BFC943310EB5A6AF3FE5C4299D1537B6BF010CC9820B71C03F13DA08D2878CCBBFB6E27C936D54E23F5181C9553CDCE83F890E107676E5C9BFA907475BB081B93F158D3925EBE1ABBF94B2695A1A149D3F8BDCE27C42C884BFA5D5015FF2757EBF94D201163F31A43FECEEF94964BFC5BFC7AFC6AE797EA7BF745FED5B03E496BFB7A4B9A39F5FC5BF14551FB28C417BBF7F181591417FA03FD1BF4AA1099EA7BFEC226151171AB03F5A541383016FB6BFC84C7443B17EC03F1894C81F3372CBBFA6D0BA836805E23F371382CC6A1CE93F6DABBDD72EA3C9BF88B78F7035FAB83F81E84222C8E8AABFC3C1A2BDC2489B3FD07C2E98816081BFB52BB939DF9E82BFA77A0914660AA53FF8927181C8B6C5BF88411CB28B14A8BF76A19974231296BFB9D9221AB44FC5BF3A03B77C6FF981BFB219DC76EA51A13F66662DB20C4BA8BFDC141BFB2D5FB03F937EDAFEE2A3B6BF2E0088A5178AC03F136C2E1C7C54CBBF1F3010EB0CB6E13F025C579BB75BE93F8879FB9AB75CC9BFBA0C5067846EB83F70EAFF65FCEAA9BF593C9AC18D78993FC47D730127EB7BBF4F477CE052FF85BF69E442EF1EE0A53F5A6B912B20ADC5BF29A39BDE25ACA8BFB4ED0B79D44395BF95D09891043FC5BF83E671D2025386BF4615C0F1091DA23F1E5737F50FEDA8BFDAC392F7BDA1B03F23A591CA80D5B6BFC2ADEF453793C03FEABF8B1C6B33CBBF892193506066E13FEB3D84061E9AE93F7BCD22910D12C9BF990CFCECA8DEB73F4E1B7086A4E8A8BF0CE20505B4A3973F1A718AA7C60F75BF8C0265AAF35B89BFA28FF4D55AB2A63FB59EEC086CA2C5BF8F495E943445A9BF563C2B55DD7994BFA82B7B746A2DC5BFD34BF4BA50B28ABF8D4464D672E6A23F7C88BE66B88BA9BFD872083EF0E1B03FA1A62F52E103B7BFC05AF6B7139AC03F0CC32BCE0C0FCBBF2DD232B36816E13FC9FC112999D7E93F5AC15C852DC3C8BF6DD9DC2BAF4AB73FCE97F2F2DEE1A7BF98FBE93174CA953F9A92AD65BB5F6CBF5271090943B48CBF6CF17781FD80A73FF360E25DA696C5BF398B752ED8DFA9BF8956C9E4F1B393BF86544E58F11AC5BF62BAFFB5A0168FBFECE4845105AEA33F4CFC1A34F226AABF0BC669DCBD1FB13F923161CD012FB7BF80884D72AF9EC03FFEC351AC6DE7CABFF0658B0F2CC6E03FC6FD231F2414EA3F3F5F27181470C8BFB8DAED12A2B2B63F06F7994EC5D6A6BFFE683121FDEC933FC6993587FF2F5DBFA4C79A5F0B0490BFA96E2B4D0E4CA83F8C30F64BD889C5BF15133806CD7BAABF970C00DC02F292BFBB662FEA9F07C5BFB3EA3FFEADBF91BF0A0E0650A373A43FE24D40EEA9BEAABF7BFBDC01205BB13FE258348CDF56B7BF535CF3E90CA1C03F096F6DF799BCCABF187C6C33B075E03F9B9C1059BA4FEA3F3A7CD0B2BF18C8BF6CEFCF3C9116B63F8501C0C17DC7A5BFC7DB5E74A10B923FFDB0A641AA6319BF7FFF08E759AB91BF3A0FDF0F6113A93F9D7C4C03F97BC5BF2C108A3F3219ABBF3B7942D2163492BF940B54417AF3C4BFF4E66C0002F693BFD4244EED3037A53FE56002D2CD52ABBFE96A11091194B13F3C4EB785797BB7BF70E110B82FA1C03F2E0EDA479F8ECABF70E56047FB24E03FA9D2C6E3568AEA3F702389AA2CBDC7BFBF780AE48576B53FC787B55D1CB4A4BF8DE4433E8426903F0D5C3E1F050C5A3F1BAA2E38F44F93BF5C2DC285F0D6A93F1D0603DF096DC5BF82A8800F01B8ABBF4F228F4E377A91BFDA0ADD9283DEC4BF1913804A112E96BF7CC6764F91F8A53F6DCD78E149E3ABBF96A566D289CAB13FA22007D7CC9CB7BFE9B45B5E1A9FC03FC3670BDB895DCABF36E9E8E225A8DF3FEB47F885F5C3EA3F08509DE85A5DC7BF4AC70F9C91D2B43F37FD62CCC69CA3BFD7A4F6DCD67B8C3F33EDFF9F7ED96A3FE376553AAAF194BF23810A44B196AA3F6C5766740C5DC5BF0AA91D472B58ACBF22D4C2E66FC490BFE91F260DBEC8C4BFAD3C5B4BAB6798BFD0C11603ACB7A63F3360979F0E70ACBF6B9D2EF085FEB13F832B62C3D9BAB7BFD1CDA144D19AC03FA289CD136829CABFEAEFDFCAFA05DF3FA422878491FCEA3FEE372D8A48F9C6BFA50D33D4C22AB43FC501A46A9E81A2BF66273EE134A4883FE399B6DFAA56743FDC622A35429096BFECDBAC699152AB3F626649F7004CC5BF54D058FFA4F9ACBFEAF88CD5C31290BF18FF978D2CB2C4BFC8A969C29BA29ABF474CE5A56574A73F7C797CE108F9ACBF3E3719E0FE2FB23F11375A2D9ED5B7BF53BD4A975794C03F06DBD53C47F2C9BF57F4EB2C8163DE3FEA15EB592634EB3F75C7E70CF490C6BFDFE5697E277FB33F848AE75FC162A1BFBC22DC8298C6843FA6768ACFE33F7B3FD18D458B872B98BF3EBD4C377F0AAC3FB4B2C233E739C5BFAE40BBA1639CADBFA61B2F9C71CA8EBF65729B59D19AC4BFDC407977B6DE9CBF1D1686E7A62EA83FB5F9687B297EADBFA584D035F05EB23FC74770B319EDB7BF081AA406B18BC03F097526AE34B8C9BF3C1CE1AAC4C0DD3F5D1E0FC5AF6AEB3FC46495245D24C6BF027E99A2CFCFB23FC27845595040A0BF638220157BE3803F057AD6BCC713813F52C34B5C48C399BF9B08C02569BEAC3FFBB76570BE26C5BFE7014F856040AEBF626456A29D778DBF4E101068AF82C4BF730E0242CC1B9FBFD03A827F57E6A83F05543F0861FFADBFCE601A3A568BB23F1E101A6B4D01B8BF37AA5736E280C03FD0F9D2A53E7BC9BFE0673C2FD11DDD3FED37818029A0EB3F669B86C283B3C5BF857FC9F3CB1CB23F49335318DA349EBFA336F862AEF6793F615784136E86843F466235EF58579BBFE31811B6416EAD3FBD0E16CB8612C5BFD34C330B93E5AEBF3C641FAD0D2D8CBFD65084C5C969C4BFD6E1B9BED6ACA0BFEC2918135E9BA93F796A19079E7CAEBF00AF25272CB5B23F3E5919B73912B8BF3E034BAFEF73C03F4AA02B6F733BC9BF8E6034A0B27ADC3FC48ABE588FD4EB3FF5554E43683EC5BF46ABE8222E66B13F43041EFE76E29BBF08787CAE651D723FB079B15570F7873F670657358AE79CBFBD7797F6FA19AE3F1B4EF24840FDC4BF3B346613F48BAFBF9E8326AAC8EA8ABF28D194192350C4BF4DBD951018CCA1BF5F2AC044A44DAA3F1CD85CE9D0F5AEBFCB101DCF6DDCB23FF3264161DF1FB8BF3A26A52FDE64C03F9CC3FF8BE1F8C8BFE1FD2FF274D7DB3F97E32C1CDD07EC3FA579A3FE0AC5C4BFDD995C8107ACB03FDA34C530BD8999BFE6264DF24378643FBA4C5CC859668B3F626336DDAD739EBF8296778088C1AE3F0124F87DEBE6C4BFA9E11157BD19B0BFB7E53C2CCCB089BFA36B12A1BE35C4BF96C6C05294EBA2BF3840CB6D14FDAA3F624E8707EB6AAFBF70C214631701B33FA5DB16673F2AB8BFB7CFAF7BB253C03FA3030C6597B3C8BFE2FE3EEE2334DB3F747E3FBD0E3AEC3F984AF2D06C47C4BF1A0FF3E6D3DCAF3F89F6F5C7F22A97BFD4BA1AA2409F423FDD5A2493B2D28E3F8647BC5F93FB9FBF37454782DD64AF3F04495A2389CFC4BFA8534F590E6EB0BF56305DAE167F88BF0388E4DB9F1AC4BFEBCE540D350BA4BF72356E6799A9AB3F308E0FCFDEDBAFBF08DBFAC92523B33FF74BBF7D5B31B8BF1D543BA77140C03F380AC187A36BC8BFFE7C0246CB90DA3FB8E9244F206BEC3F4430CC258FC5C3BF40158E33D05AAE3FFD4388425EC694BFB6D4D2B0276956BF30A2B3ED011E913F02BAB85684BFA0BF57A2DAF0F501B03FADBFA49019B7C4BFB7C7FBE2E8C2B0BFC6D5F0F1AA5587BF9A494951CAFEC3BFA7E82F4AE32AA5BFFF6583411E53AC3FC49F1CC04F24B0BF2206E5A89642B33F9BC06A523635B8BF00ECC64E212BC03FAC94EDEA1421C8BF1E9411B576EDD93F6A400EF90D9BEC3F517BCFE0733FC3BF7C6CEFB82AD2AC3F2CCB2FE4465C92BF03563814051B6BBFF08BA028F0D0923FA6318E2BF07EA1BF746A0FED534FB03FDE5EE4A89D9DC4BF1DDF38014818B1BFE2F21EEB8B3486BFE0C232B341E2C3BFFE2C279C864AA6BF15F3CE968CF9AC3F6B1B508A8F58B0BF8D570044675FB33F07E6D689D235B8BF44C38C36C713C03F395758B4FAD3C7BF6178A9F0314AD93F17543EFCD3C9EC3F3387D08B1DB5C2BFC69DA5920D43AB3FA0342EF4F5D98FBFED982A94BD8475BFEA27238BEA81943F73D87085F53BA2BF332CD6BA829AB03F4ABB6A811683C4BF765F4C0C266EB1BF3767FDABC61B85BFA7ACE60509C5C3BF9B76E9B0086AA7BFB22B9893CF9CAD3F8ED2A833A88AB0BFEED766299579B33F26C3EE1F3333B8BFF9BD6DE0D2F4BF3F50DDCD736484C7BFFB9926DE08A7D83F5F8203886EF7EC3F67E185698E26C2BFF0781FE9A1ADA93FABE9348191F18ABF24702C20F77E7DBF8A77956AB730963F4BB63EC27BF6A2BFF416FEA17BE3B03F67359BE58467C4BF2A6803897DC4B1BF9611418D600B84BFAE8BCD6823A7C3BFB6DCBA9C5389A8BFCED96B24D33CAE3F22464E4D93BAB0BF87B5E3A51D91B33F0D2D19655A2DB8BFA670CE261BBEBF3FD80A502C6132C7BF5EDBAC0A0704D83FA63954F7D923ED3F14671118C993C1BF55EC0BBA1012A83F1F2B16BEF9FF85BFB278B0A89DBD82BF71405E1423DD973F959D11B26CAEA3BFD6B8DEA5382AB13FAE49DAE2E94AC4BF02CAB234481BB2BF90F621415A0383BF371795019488C3BFC67F2DE052A8A9BF1A2EC63986D9AE3F3375D8524CE8B0BF87020A0A00A6B33FFB70765F4C24B8BF37A306817383BF3F0A6E41EFFFDDC6BFF5D0C0B63761D73FFECBF5EE124FED3F7B7DA97AD1FCC0BF25CAF9A78770A63FB8D5F161DA0581BF3AA862643DBC86BFCCE150B3F686993FC5CB5706B163A4BF8BC306C1B26EB13FE31F84BC452DC4BF50BF99678172B2BFF0E9A8E8A50382BFBD65D1195F69C3BF1D5FB4D8EDC6AABF459D5348D572AF3FB628DB93CE13B1BF1DA48EA73CB8B33FD55543330F18B8BF3B28BB1BEB44BF3F00B7BD595187C6BFE80E0BC9A6BED63FFFE6D5DB1579ED3FB6C470CAAA61C0BF3750169631C9A43F71859DE2AF0778BFE987DFA2DABA8ABFBDD7BDD2022E9B3FA6EB430D3616A5BF19606CCAE4B0B13F6B07AC11990EC4BFAD6219D124CAB2BF9AB2C237420C81BF5AE2020C8949C3BF83A4FC5508E5ABBFD448F1525304B03FB93E6B73113DB1BFB1FBC463CFC7B33F191B63B0A408B8BFBDBFF8498D02BF3F9B492173642EC6BFE88664645F1CD63F9F54FF8FDFA1ED3F4B0F3F67B384BFBFA6AB56583E1CA33FA2196390B1EA6BBF160CD964E0B88EBF3673283613D29C3FBDEFC009EAC5A5BF5B4791DCCAF0B13F63932BE3E4EEC3BFCEA6DFB72E22B3BF8954070A661D80BF963B2D171229C3BFF6E960509702ADBFDF306193784DB03F0082019E1364B1BFEE489560BAD4B33F7A18DCBA13F6B7BF1C038C6469BCBE3F68E4F0C749D3C5BFEB69E3326D7AD53F6BF9F3B76CC9ED3FE3A0BD19C53DBEBFB23F01B1DC69A13F6C2F1CE464B14EBFA4C4777FD55A91BFED32F736EE729E3FC1B6E457BC72A6BF48D8BCA6632EB23F2FF5FDFC2BCEC3BFEC71BE4D987AB3BF97CCDD37946D7EBF94821E0B0108C3BF655EAD2F7B1FAEBFD3AE4C31CE94B03FFBCC3B5ACE88B1BF3D63C5D2FBDEB33F342F4B6460E0B7BF4BBD76A38C72BE3F5B9EA40E1176C5BF98131D75DBD8D43FCE62E936BAEFED3F86C123D394EEBCBFD531115E7B649F3F5CBF2A25CD50593FBE70A4E9385893BF594CE2B42108A03F9C8B3982931CA7BF9114A757AC69B23F62CE503372ACC3BF710D39B955D3B3BFC41E271439B17CBF46E2AFAC57E6C2BF5D1F8E3AA23BAFBF04F338D94CDAB03FEBD7257E3EABB1BFF9D013B294E6B33FCE1F39EC90C7B7BFC03A4BD50525BE3FF658796ECA16C5BF3EC40D72B537D43F2A933C01C514EE3FEC1D1F702D97BBBF5950DBA027EB9B3F773E72B1FA87703FB4E1708A175495BF1F1A9A80C6D4A03F9619984633C3A7BFC8D3CA678EA2B23FC5CDAC86B189C3BF35B515256D2CB4BF26E6B21199057BBFD775CE3B1AC4C2BF01334E3D7A2BB0BF42744547EB1DB13F335C6ECD5FCBB1BFCBDDC48885EBB33FE9B3F3D3ABABB7BF06B1B3B9E4D3BD3FA072970287B5C4BF4D9F18BE0797D33F383D2F488738EE3FFF123A46D636BABFBF93EE843512983FD9DBE99FAED37A3FC85DADC4D54F97BFC6428747C29FA13F657F62B2CF66A8BFAEB29E9E1CD9B23FD31D0AE9F265C3BFE3CB4A8ECF85B4BF6057FEABBE6A79BFC9B2AD2C4CA1C2BF678A0FEBADB8B0BF441F5194A05FB13FEF3B89D42DE9B1BFF2C15BD1CDEDB33F4F2B3B26B58CB7BFD0E1145C337FBD3FAB184FF85052C4BF7EAAEF2DD5F6D23F9B9C1A450C5BEE3F9AB0569491D0B8BF2857AC7978C9943F9ED4B08A588C823FC29ABB0E174999BFE39C95528B68A23FB841570C2107A9BF42AD0883450DB33F7A7BE4813441C3BFE11817D67ADFB4BF15A28186B0E077BFF4AB68C1F07DC2BFA68F3B566245B1BF3C7E2E15669FB13F7E77FCD6A704B2BF456F5E8373EDB33F87FAECEDBC6AB7BFAF577D131327BD3F6C53129C49EDC3BF4B4EE9683B57D23F74487B52387CEE3FD095BB0E8760B7BFAAC92CC61D32913F86772643AFB4873F25007911AA409BBFB93FCB61342FA33F5EB5159525A4A9BF9906E222093FB33F45C8DF03791BC3BFF56A51F76739B5BF734142A95A6776BF095AAB830C5AC2BF1E302CFD89D1B1BF8805C2652FDDB13F89E7CCE0C31DB2BF2ECBE1D56CEAB33F74DF6BA4B845B7BFAA39233C78CBBC3FE5EC5F156C86C3BFB205FE7833B8D13F22041DCC199CEE3FA24526788CE8B5BFF13336EEF2238B3FDD2B8694E8DF8C3F6700B4ED17369DBF5B18FFF19BF3A33F8AE564F2C73DAABF21590864636EB33F70DE1229C2F4C2BF042E97D79093B5BFEBF03981E5FE74BF70351D48A135C2BFB611D7831F5DB2BFFE954328FC18B23F185203368934B2BF6C36A5C5C8E4B33F82847B3BC01DB7BFE119667B866CBC3FE23D6ACDD21DC3BF92B84DC0CC19D13F4C0D858DACBAEE3FADCD4383AB68B4BFDBF880F7E0D2833F023B63F4AD06913F898724221D299FBFE7B6CCBAA7B5A43F9FCF5B70F5D3AABF6AB64CAF509BB33F223D619311CDC2BFC874E247F0EDB5BFFFB2C89111A773BFBCA9024FB510C2BFEB62303612E8B2BFE4747701BE52B23F90A053C4EE48B2BFDE88B98E83DCB33FBF7C94B5D7F2B6BFFE7A82524E0ABC3FB3B6786290B3C2BF7ADC52D4137CD03F234EF831EDD7EE3F0B59B3DAEFE0B2BFDC19152AA6E3783F627C1A71309E933F952CAABEBB8CA0BF3CB02DAB3E75A53F6CFD5A789D66ABBF70963D18CFC5B33F284634FF69A4C2BFFF9EEC4F7E48B6BF0C512154176072BF539A0AB44AEBC1BF1A9EB6FF5972B3BFCF11EFB06E8AB23F6413130BF25AB2BF212A39A39DD1B33F7A2C67DF03C5B6BF1F363488DDA4BB3FED0511EEB447C2BFB0B5EAB227BECF3F27FF38DFD8F3EE3FC6711B2D6751B1BF16FA887B7A06643FBC4B3BEA2336963F7828D7337083A1BFE7AF9EA94432A63F5ECACC8AABF5ABBF9B274431DAEDB33F86CAD27ACC7AC2BF3EC966A737A3B6BF8F9B7F23F12971BFF81C75F364C5C1BF94B270C3EDFBB3BF631F40CF08C0B23F41959E0A936AB2BFA29593211BC4B33F0E228B094D94B6BFBDC5D3D8433CBB3F542E196350DAC1BFAC44B4D5AE85CE3FCA5FBE006D0EEF3FAF4B734A3F74AFBF14D0BB656DE753BFA13E30E936CE983FC11847198D78A2BF07A9781CA3ECA63F25E46FC31181ACBF512617C67113B43FB678C3BC3C50C2BFE92513A012FEB6BF837A43828B0470BF4839486E089FC1BF70B44C44C284B4BF945B031085F3B23F31BFBFA5D077B2BF804A7F5600B4B33FC85019C2BC60B6BF9861613692D0BA3F995895A1726BC1BFE9A0DE27D14ECD3F691B8A70A727EF3F9047DDAE5436ACBFA0ABD005E11174BF01E87D580E669B3F21F1286AEE6BA3BF8444F4633DA4A73F14B09916BB08ADBFA9E0AC6B9136B43F59F3B132BC24C2BFE94E7C110A59B7BF6464ABFAD7DF6DBF952EC5FD3878C1BFCC0F93C5CC0CB5BF2746DF21DC24B33F93CE2A6DA982B2BF8737AEC151A1B33F5E3B59EE5D2AB6BF0E8B21D7DB61BA3F6A14B79A2CFBC0BF59C1283DA319CC3FEB766A08863FEF3F809E2E752FE9A8BF9284335295A181BFA7BEE51B58FD9D3FACE569B4755DA4BF9E7ECD1CFD58A83FBD66106F988CADBF1A3C9F2B3757B43FF841DA0A4DF8C1BF7DCD368D18B4B7BFF7FEB46131D86BBFA18D7A60FA50C1BFDCB5C6B90294B5BFF37175850654B33FECB52FF31A8BB2BF1449645F128CB33F1D5E1C293AF1B5BFF0C0813933F0B93FDDAEC5F68E89C0BFFC26C9E638E6CA3F91D2C9F90656EF3F871C9DEBF58CA5BFACB40BD7F64589BF2748DD4EDD49A03F5ADC7EC8014DA5BF2ADBDCCACA0AA93F875362799B0CAEBF1557E33A6275B43FF9D5384AF2CAC1BFED037EE2360FB8BF98D9CA513AF269BFB6CA9AF24F29C1BF9FF06BE25A1AB6BFA2B3B46FFE80B33FDF6E3C252491B2BF891228FA4574B33F9632A1B65BB5B5BF67766BDEAB7BB93FAA2A7405AB16C0BFB04B2A67A6B4C93FAE9CF577286BEF3F421A10B6CE21A2BF7B7F3B43987A90BFF55A89906D94A13F256DE0C16F3AA6BF1977028B8CB9A93F60ADBA76B388AEBF6CE3B0C41091B43FCB40B09CAE9CC1BF0B4F6E375E6AB8BF5F665056EC2D68BF775244803D01C1BFAA4BE583CB9FB6BFF0A98244BEABB33F9209193AC494B2BF77F37E31F059B33FE5291A45CC76B5BFF721CDA85804B93F5FBBCFD02345BFBF37F217CAFF84C83F97ED06CFE87EEF3FED41F0F9C14F9DBF3DFF7948325794BF30971A2832DEA23FB0BF90489F25A7BF82477F612A65AA3F0502FADBD000AFBF93C6D63E41AAB43FDED7DFBA846DC1BF5AEFD89F87C5B8BF9B2C8D0D438B66BFF8B176EAC6D8C0BFC1CE72C24A24B7BF3B10BFEA40D4B33F4DCEFA5CFB95B2BF8AF3C771153DB33F57A3CBD09535B5BFA03201474C8AB83F5F8111E5A85ABEBF586576795857C73F8C6F9A8F4691EF3F642A7F70B03E96BFACCB9BE7553898BFCD954CA3FF26A43F17423828700EA8BF6FDD1CCF8C0DAB3FD89D5490E474AFBF359FC21DF2C0B43F539D212E773DC1BF19C203EFAC20B9BFAE89145B410A65BF4ECBEC1BF0AFC0BF73AF125FCEA7B7BFBD00BA4981FAB33F723D186BCA94B2BF6507FA43BB1DB33F88767795C3F1B4BFF282F1A39A0DB83F6F0D8DFF076EBDBF5E75842DC42BC63F5339FA5440A2EF3FB33074A686218EBF44A95B5E8D1D9CBF090BC753AA6EA53FD23514B3C2F4A8BFA313F0769DB2AB3FA840740FE1E4AFBFB0EF9BAF22D5B43F6D55BFD7880CC1BFB8660F9BC77BB9BF6DBF69B9F1AA63BF0C172AF9BC86C0BF1831E17D4B2AB8BF0AFA945C791EB43F3E78027E3191B2BF7374BD83E6FBB23F1EE7A02C60ABB4BFF0CE0927578EB73FAE93478F637FBCBF836955895602C53FA548C5C8D4B1EF3FB4C014D860197FBF3E54B6503003A0BF2681E7BF05B5A63FFE8413CB76D8A9BF4E3AADF94554AC3FB2BBCDAD5C28B0BF341AF2BBD2E6B43F7616C2DBBCDAC0BF3C7060B1D0D6B9BF6D96590B7E6D62BF3DDAB9A8305DC0BF86E36091B8ABB8BFFECA6D1C2440B43F308D4A9B318BB2BFB8578DBC9CD7B23FA378525F7662B4BF1888F5E0940CB73F1B705860DD8EBBBF0FE6FBDA22DBC33F297BBEA802C0EF3F49D5443ECFF337BF1717C5FE2AF9A1BFD43468ADE4F9A73F69FEF27A6BB9AABF36E8E1226FF2AC3FA3EB41F32F5CB0BFB0832EF301F6B43F64BD596616A8C0BFB3E65F14C131BABFA7F7A279EC5161BFAE79B1804E33C0BFF0FDE3130C2CB9BF6EBA6BC47C5FB43FF1A3CF97CC82B2BFD32A27B4E4B0B23FA277E7161217B4BFE2365C786788B63F5EC4A82B979CBABFC2586A3E3CB6C23F874AD1B9C8CCEF3FD49E08C5DF897C3F324B3F107BF0A3BFB3E167671B3DA93F0B58D10C8197ABBFB610E589028DAD3FDEDE83CBE38DB0BF9197F535B002B53F8C0683C29874C0BF681C5B2D918CBABFA831F6CC315860BF38D237251A09C0BFFC0A68AE3BABB9BFCB9967617D7CB43F68B763620378B2BF70C361DCC487B23FD248B3303FC9B3BF399B0D32E201B63FD03E2175B1A8B9BFB9DCE8D2B493C13F0DA2480026D8EF3F2944251330808D3F3DC3FEC9E3E8A5BF327A85467E7EAA3FAD21E9369872ACBFA7B164FDE923AE3FE1FBD67771BDB0BFA2EAC6C9DC0CB53FEA95F5B14640C0BF318C3CC03AE7BABFAC4A5731F7005FBF42DC1F6D2CBDBFBF591895F73E29BABF93CD3A322197B43FCCFE6DDDD76AB2BF1513EB12455CB23F485F2B850B79B3BFFF855C4D1A79B53FD06F2DC74DB3B8BF55254C919E73C03F47C745A119E2EF3FC470E400A878963FBA4278F827E2A7BF4AADF4A8E2BDAB3FCA98E4EC934AADBFE2DBE46912B7AE3FCBB59CEAD3EAB0BF378968818814B53FE23CB372230BC0BF4184D973B741BBBF8613140872955DBFC8B818EA8B67BFBF72A353BE0CA6BABF9FE7491762AFB43F7071450F4A5BB2BF2E8036AB6B2EB23FE14A0F6C8426B3BF11F14F8425EEB43F5B66B82E8EBCB7BFD78B167016ACBE3F2E648AEFA2EAEF3F252CC538B74B9E3F3EB689BA06DCA9BFCF042B931AFBAC3F97A0EC98541FAEBF2F86A9956746AF3FE3115F590616B1BF614D5A4DB519B53FEC25553866AABFBFF8329619FF9BBBBF246A25C22F6E5CBFBFC9B5EC5611BFBF45EE51989E21BBBFC5FB30C23BC5B43F3DEEC9385A49B2BF909DBA3F3EFEB13F72C1BDBCB6D1B2BF1B281E281A61B43F954F023596C4B6BF75EDF2951A76BC3FDDAAE916C1F1EF3F13B1AC3E6C1CA33FDB282EF43FD6ABBFFEC3443EF735AE3F49184CE7B7F0AEBF3E19D7FBD0D1AF3FB4D99167013FB1BF4E2B8172621CB53F07A0BA14F13CBFBFAF4D84B70BF6BBBF864DF696428B5BBFBE8E049691BABEBF4712BEDCEF9BBBBF4EFF39C6ABD8B43FE362DAE70835B2BF105271A9C0CBB13F06E1AA39AC7AB2BF46C6097F0BD2B33F04E9AE6B87CBB5BF322F87BE6D45BA3F29F7233273F7EF3F5073D0BED31FA73F1A6332F29AD0ADBF71622A64536EAF3F5705C360A5BEAFBF8F5BF2A89F2CB03F280754A2C165B1BFB175AF7A921CB53F859D66E8EFCDBEBF8672D00FD54FBCBF62D6DEE5E3EC5ABFBC2ABE613E63BEBFFEF972200015BCBF7D874AA3B5E9B43FF9CFECE75B1EB2BF3725F36EF996B13FFF2466B36D21B2BFD146587C0841B33F1F112AC47CD1B4BFE0C727962B1AB83FE3229183B9FBEF3F357E879ACE2FAB3FA45BCF61D0CAAFBF03DBD0C8FE51B03F187599847D44B0BFA71CFD114E6EB03F86E4EBE1408AB1BFD21978AE451AB53F726FB836695DBEBF20BCFA7354A9BCBF8EAB785954935ABFE592C8FC5D0BBEBF2E8D078CD58CBCBF5CC9C25D69F8B43F280A572D6A05B2BF6B14A5330360B13FC79CBB6318C6B1BF5E59B2E332AEB23F95CE31D9A0D6B3BF980B1A777CF4B53F0C21961793FEEF3F3D065820284CAF3F2135B22A52E2B0BFFE7819C266EBB03F89564603CFA7B0BFD796E260EBADB03FD92260517BACB1BF5BD2FA1E7E15B53F9DC146B764EBBDBFA037C66E8202BDBFE02E93FBC5B5D83F2EDD42E63FB4BDBF2DE2BBD9EF02BDBFC5D2C5218204B53F5DF555520FEAB1BF8157FFD3CC26B13F84EE17D3A968B1BF065C3CD29519B23FAFE306BF0EDBB2BFDC3771727DD4B33F000000000000F03FA85CEF3850BAB13FB9A512CCE9DEB1BF9E7C08FD4A83B13F88E473043809B1BF4F1522296EEBB03F5133219D6CCCB1BFBA13CAAF3D0EB53F52C80504EA77BDBF53EDD9A1575BBDBF</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_File</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_File" spirit:order="5">no_coe_file_loaded</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Sets</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Sets" spirit:order="6" spirit:minimum="1" spirit:maximum="1024" spirit:rangeType="long">128</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Reload</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Reload" spirit:order="7">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Filter_Type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Filter_Type" spirit:choiceRef="choice_pairs_789dfe7d" spirit:order="8">Single_Rate</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Rate_Change_Type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Rate_Change_Type" spirit:choiceRef="choice_pairs_eb2746f0" spirit:order="9">Integer</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Interpolation_Rate</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Interpolation_Rate" spirit:order="10" spirit:minimum="1" spirit:maximum="1" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Decimation_Rate</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Decimation_Rate" spirit:order="11" spirit:minimum="1" spirit:maximum="1" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Zero_Pack_Factor</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Zero_Pack_Factor" spirit:order="12" spirit:minimum="1" spirit:maximum="1" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Channel_Sequence</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Channel_Sequence" spirit:choiceRef="choice_list_24b724fb" spirit:order="13">Basic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Number_Channels</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Number_Channels" spirit:order="14" spirit:minimum="1" spirit:maximum="1024" spirit:rangeType="long">128</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Select_Pattern</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Select_Pattern" spirit:choiceRef="choice_list_3f660234" spirit:order="15">All</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Pattern_List</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Pattern_List" spirit:order="16">P4-0,P4-1,P4-2,P4-3,P4-4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Number_Paths</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Number_Paths" spirit:order="17" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>RateSpecification</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RateSpecification" spirit:choiceRef="choice_pairs_77253c53" spirit:order="18">Input_Sample_Period</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HardwareOversamplingRate</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HardwareOversamplingRate" spirit:order="19" spirit:minimum="1" spirit:maximum="10000000" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SamplePeriod</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.SamplePeriod" spirit:order="20" spirit:minimum="1" spirit:maximum="1e+07">1.00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Sample_Frequency</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Sample_Frequency" spirit:order="21" spirit:minimum="1e-06" spirit:maximum="47488">0.001</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Clock_Frequency</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Clock_Frequency" spirit:order="22" spirit:minimum="1.6e-05" spirit:maximum="742">300.0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Sign</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Sign" spirit:choiceRef="choice_list_5e9d103c" spirit:order="23">Signed</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Quantization</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Quantization" spirit:choiceRef="choice_pairs_1031a51f" spirit:order="24">Quantize_Only</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Width</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Width" spirit:order="25" spirit:minimum="2" spirit:maximum="49" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BestPrecision</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.BestPrecision" spirit:order="26">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Fractional_Bits</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Fractional_Bits" spirit:order="27" spirit:minimum="0" spirit:maximum="14" spirit:rangeType="long">14</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Structure</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Structure" spirit:choiceRef="choice_pairs_433eb1cb" spirit:order="28">Inferred</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Data_Sign</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Data_Sign" spirit:choiceRef="choice_list_8506c89f" spirit:order="29">Signed</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Data_Width</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Data_Width" spirit:order="30" spirit:minimum="2" spirit:maximum="49" spirit:rangeType="long">18</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Data_Fractional_Bits</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Data_Fractional_Bits" spirit:order="31" spirit:minimum="0" spirit:maximum="18" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Output_Rounding_Mode</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Output_Rounding_Mode" spirit:choiceRef="choice_pairs_18e22ec6" spirit:order="32">Full_Precision</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Output_Width</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Output_Width" spirit:order="33" spirit:minimum="1" spirit:maximum="34" spirit:rangeType="long">34</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Filter_Architecture</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Filter_Architecture" spirit:choiceRef="choice_pairs_ab4ea833" spirit:order="34">Systolic_Multiply_Accumulate</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Optimization_Goal</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Optimization_Goal" spirit:choiceRef="choice_list_a63914d2" spirit:order="35">Area</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Optimization_Selection</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Optimization_Selection" spirit:choiceRef="choice_pairs_2c8455e6" spirit:order="35.3">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Optimization_List</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Optimization_List" spirit:order="35.6">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Data_Buffer_Type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Data_Buffer_Type" spirit:choiceRef="choice_list_dd381b21" spirit:order="36">Automatic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Coefficient_Buffer_Type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Coefficient_Buffer_Type" spirit:choiceRef="choice_list_dd381b21" spirit:order="37">Automatic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Input_Buffer_Type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Input_Buffer_Type" spirit:choiceRef="choice_list_dd381b21" spirit:order="38">Automatic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Output_Buffer_Type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Output_Buffer_Type" spirit:choiceRef="choice_list_dd381b21" spirit:order="39">Automatic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Preference_For_Other_Storage</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Preference_For_Other_Storage" spirit:choiceRef="choice_list_dd381b21" spirit:order="40">Automatic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Multi_Column_Support</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Multi_Column_Support" spirit:choiceRef="choice_list_0dc4ca8f" spirit:order="41">Automatic</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Inter_Column_Pipe_Length</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Inter_Column_Pipe_Length" spirit:order="42" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>ColumnConfig</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.ColumnConfig" spirit:order="43">20</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DATA_Has_TLAST</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_Has_TLAST" spirit:choiceRef="choice_pairs_30d5ecb6" spirit:order="44">Packet_Framing</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M_DATA_Has_TREADY</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.M_DATA_Has_TREADY" spirit:order="45">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S_DATA_Has_FIFO</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.S_DATA_Has_FIFO" spirit:order="46">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S_DATA_Has_TUSER</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.S_DATA_Has_TUSER" spirit:choiceRef="choice_pairs_24981fac" spirit:order="47">Not_Required</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M_DATA_Has_TUSER</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M_DATA_Has_TUSER" spirit:choiceRef="choice_pairs_3ab545a3" spirit:order="48">Not_Required</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DATA_TUSER_Width</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_TUSER_Width" spirit:order="49" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S_CONFIG_Sync_Mode</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.S_CONFIG_Sync_Mode" spirit:choiceRef="choice_pairs_f611af79" spirit:order="50">On_Vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S_CONFIG_Method</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.S_CONFIG_Method" spirit:choiceRef="choice_pairs_b6c64168" spirit:order="51">By_Channel</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Num_Reload_Slots</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Num_Reload_Slots" spirit:order="52" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Has_ACLKEN</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Has_ACLKEN" spirit:order="53">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Has_ARESETn</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Has_ARESETn" spirit:order="54">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Reset_Data_Vector</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Reset_Data_Vector" spirit:order="55">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Blank_Output</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Blank_Output" spirit:order="55.5">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Gen_MIF_from_Spec</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Gen_MIF_from_Spec" spirit:order="56">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Gen_MIF_from_COE</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Gen_MIF_from_COE" spirit:order="57">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Reload_File</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Reload_File" spirit:order="58">no_coe_file_loaded</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Gen_MIF_Files</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Gen_MIF_Files" spirit:order="59">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DisplayReloadOrder</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.DisplayReloadOrder" spirit:order="60">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Passband_Min</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Passband_Min" spirit:order="61" spirit:minimum="0" spirit:maximum="1">0.00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Passband_Max</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Passband_Max" spirit:order="62" spirit:minimum="0" spirit:maximum="1">0.50000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Stopband_Min</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Stopband_Min" spirit:order="63" spirit:minimum="0" spirit:maximum="1">0.50000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Stopband_Max</spirit:name>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Stopband_Max" spirit:order="64" spirit:minimum="0.5" spirit:maximum="1">1.00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Filter_Selection</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Filter_Selection" spirit:order="65" spirit:minimum="1" spirit:maximum="128" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>FIR Compiler</xilinx:displayName>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BestPrecision" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Blank_Output" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Channel_Sequence" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Clock_Frequency" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CoefficientSource" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CoefficientVector" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Buffer_Type" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_File" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Fractional_Bits" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Reload" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Sets" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Sign" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Structure" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Coefficient_Width" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ColumnConfig" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.DATA_Has_TLAST" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.DATA_TUSER_Width" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Data_Buffer_Type" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Data_Fractional_Bits" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Data_Sign" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Data_Width" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Decimation_Rate" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.DisplayReloadOrder" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Filter_Architecture" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Filter_Selection" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Filter_Type" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.GUI_Behaviour" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Gen_MIF_Files" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Gen_MIF_from_COE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Gen_MIF_from_Spec" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HardwareOversamplingRate" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Has_ACLKEN" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Has_ARESETn" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Input_Buffer_Type" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Inter_Column_Pipe_Length" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Interpolation_Rate" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M_DATA_Has_TREADY" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M_DATA_Has_TUSER" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Multi_Column_Support" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Num_Reload_Slots" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Number_Channels" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Number_Paths" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Optimization_Goal" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Optimization_List" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Optimization_Selection" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Output_Buffer_Type" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Output_Rounding_Mode" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Output_Width" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Passband_Max" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Passband_Min" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Pattern_List" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Preference_For_Other_Storage" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Quantization" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RateSpecification" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Rate_Change_Type" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Reload_File" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Reset_Data_Vector" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S_CONFIG_Method" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S_CONFIG_Sync_Mode" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S_DATA_Has_FIFO" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S_DATA_Has_TUSER" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SamplePeriod" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Sample_Frequency" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Select_Pattern" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Stopband_Max" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Stopband_Min" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Zero_Pack_Factor" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2015.4</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="54295f45"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1122e73d"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="a12c3d9f"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="30483a3a"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="9c321b6c"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Nov 27 09:50:12 2017
+# Process ID: 4065
+# Current directory: /home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb
+# Command line: wbtcv -mode batch -source /home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/xsim_proj/xsim_proj.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/webtalk.log
+# Journal file: /home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/webtalk.jou
+#-----------------------------------------------------------
+source /home/ak/ootmods/rfnoc-ppchan/rfnoc/testbenches/noc_block_fir_tb/xsim_proj/xsim_proj.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 27 09:50:12 2017...

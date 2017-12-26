@@ -1,0 +1,13 @@
+$(addprefix $(OOT_DIR), \
+noc_block_chan256.v \
+noc_block_chan128.v \
+hdl_channelizer/channelizer.vhd \
+hdl_channelizer/channelizer_entity_declarations.vhd \
+hdl_channelizer/conv_pkg.vhd \
+hdl_channelizer/single_reg_w_init.vhd \
+hdl_channelizer/srl17e.vhd \
+hdl_channelizer/synth_reg.vhd \
+hdl_channelizer/synth_reg_reg.vhd \
+hdl_channelizer/synth_reg_w_init.vhd \
+hdl_channelizer/xlclockdriver_rd.vhd \
+) \

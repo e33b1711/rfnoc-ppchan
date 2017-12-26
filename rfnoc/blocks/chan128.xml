@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Default XML file-->
+<nocblock>
+  <name>chan128</name>
+  <blockname>chan128</blockname>
+  <ids>
+    <id revision="0">BC9460131028C0FC</id>
+  </ids>
+  <!-- Registers -->
+  <setreg>
+    <name>MAN_RST</name>
+    <adress>200</adress>
+  </setreg>
+  <!-- Args -->
+  <args>
+    <name>man_rst</name>
+    <type>int</type>
+    <value>1</value>
+    <action>
+      SR_WRITE("MAN_RST", 0)
+    </action>
+  </args>
+  <!--One input, one output. If this is used, better have all the info the C++ file.-->
+   <ports>
+    <sink>
+      <name>in</name>
+      <type>sc16</type>
+      <vlen>128</vlen>
+      <pkt_size>128</pkt_size>
+    </sink>
+    <source>
+      <name>out</name>
+      <type>sc16</type> 
+      <vlen>128</vlen>
+      <pkt_size>128</pkt_size>
+    </source>
+  </ports>
+</nocblock>
